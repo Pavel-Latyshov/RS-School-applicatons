@@ -1,0 +1,406 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    /* background-color:blanchedalmond; */
+    width: 1440px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* header */
+
+h1 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 23px;
+    padding-top: 8px;
+    padding-left: 61px;
+    font-weight: 400;
+}
+
+.link {
+    height: 60px;
+    padding-top: 17px;
+    color: inherit;
+    font-size: 23px;
+}
+
+.container-header--survival {
+    width: 1440px;
+    height: 779px;
+    background-image: url(./assets/Rectangle.png);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f7f7f7;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+
+.header .header-logo {
+    display: flex;
+    text-transform: uppercase;
+    padding-top: 19px;
+    height: 60px;
+
+}
+
+
+
+.header .header-logo .text {
+    align-self: center;
+    padding-left: 15px;
+    
+}
+
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.header .navbar .button {
+    position: relative;
+    left: 2px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 120px;
+    height: 50px;
+    border: 2px solid #CD6326;
+    border-radius: 5px;
+    line-height: 60px;
+
+}
+
+
+.header .navbar .button:hover {
+    background-color: #CD6326;
+    border-color: #CD6326;
+}
+
+.header .navbar .button:active {
+    background-color: #8F5613;
+    border-color: #8F5613;
+}
+
+
+/* //header// */
+
+/* survival */
+
+.survival {
+    font-style: inherit;
+    padding-top: 90px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.survival .title {
+    font-size: 48px;
+    color: #CD6326;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 2px;
+}
+
+.survival .text {
+    padding-top: 51px;
+    padding-bottom: 49px;
+    width: 275px;
+    height: 108px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #f7f7f7;
+}
+
+.survival .button {
+    position: relative;
+    bottom: 2px;
+    left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 60px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #f7f7ff;
+    background-color: #CD6326;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.survival .button:hover {
+    background: #E39128;
+}
+
+.survival .button:active {
+    background: #8F5613;
+}
+/* //survival// */
+
+/* latest articles */
+
+.container-latest {
+    display: block;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: cent;
+    height: 1368px;
+    background: #CCCCCC;
+}
+
+.container-latest .title {
+    padding-top: 120px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.container-latest .text {
+    padding-top: 20px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 24px;
+    line-height: 36px;
+    color: #666666;
+
+}
+
+.scroller {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pics {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.deer {
+    padding-right: 60px;
+    width: 300px;
+    height: 360px;
+    background: url(./assets/Deer.png);
+    background-repeat: no-repeat;
+
+}
+
+.squirrel {
+    padding-right: 60px;
+    width: 300px;
+    height: 360px;
+    background: url(./assets/Squirrel.png);
+    background-repeat: no-repeat;
+
+}
+
+.bird {
+    width: 300px;
+    height: 360px;
+    background: url(./assets/Bird.png);
+    background-repeat: no-repeat;
+
+}
+
+ .pic-title {
+    padding-top: 247px;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #F7F7F7;
+
+}
+
+.pic-text {
+    padding-top: 10px;
+    padding-right: 0px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: #F7F7F7;
+
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.notification .text {
+    padding-top: 239px;
+    padding-bottom: 59px;
+    font-size: 27px;
+    line-height: 40px;
+    color: #333333;
+}
+.form {
+    position: relative;
+    top: 3px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 0 0 0 15px;
+    /* padding: 0; */
+    border: 1px solid #666666;
+    border-right: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #CCCCCC;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    font-weight: 400;
+    outline: none;
+}
+
+
+.input-form {
+    width: 540px;
+    height: 60px;
+}
+
+.input-button {
+    padding: 0;
+    position: relative;
+    right: 6px;
+    width: 120px;
+    height: 60px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #CD6326;
+    color: #f7f7f7;
+}
+
+.input-button:hover {
+    background-color: #E39128;
+    cursor: pointer;
+}
+.input-button:active {
+    background-color: #8f5613;
+}
+
+/* //latest articles// */
+
+/* footer */
+.container-footer {
+    display: flex;
+    align-items: center;
+    height: 360px;
+    background: url(./assets/Rectangle-2.png);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #f7f7f7;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+
+.footer .footer-logo {
+    display: flex;
+    text-transform: uppercase;
+    padding-top: 8px;
+    height: 60px;
+
+}
+
+.footer .footer-logo .text {
+    width: 155px;
+    align-self: center;
+    padding-left: 15px;
+    
+}
+
+
+.footer-navbar {
+    padding-left: 120px;
+}
+
+.article {
+    width: 80px;
+    height: 60px;
+}
+
+
+.footer-links {
+    
+    padding: 12px 90px 0 0;
+    text-decoration: none;
+    color: inherit;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.footer-icons {
+    position: relative;
+    left: 34px;
+}
+
+.footer-icon {
+    padding: 8px 0 0 0px;
+    text-decoration: none;
+}
+
+.inst {
+    position: relative;
+    left: 25px;
+}
+.p {
+    position: relative;
+    left: 50px
+}
+
+.t {
+    position: relative;
+    left: 80px;
+}
+
+
+.blog {
+    position: relative;
+    right: 3px;
+}
+.ul-footer {
+    padding: 0;
+}
+
+

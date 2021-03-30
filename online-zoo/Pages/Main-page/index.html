@@ -12,30 +12,31 @@
 
     <header class="header-wrapper">
         <div class="header-content-wrapper">
-            <div class="logo-wrapper">
+            <a href="#" class="logo-wrapper">
                 <div class="logo-zoo">
                     zoo
                 </div>
                 <div class="logo-online">
                     online
                 </div>
-            </div>
+            </a>
             <nav>
                 <ul class="navbar-wrapper">
                     <li>
-                        <a href="#" class="about">About</a>
+                        <a href="#" class="about header-link">About</a>
                     </li>
                     <li class="zoos">
-                        <a href="#">Zoos</a>
+                        <a href="#" class="header-link">Zoos</a>
                     </li>
                     <li class="map">
-                        <a href="#">Map</a>
+                        <a href="#" class="header-link">Map</a>
                     </li>
                     <li class="contacts">
-                        <a href="#">Contact Us</a>
+                        <a href="#" class="header-link">Contact Us</a>
                     </li>
                     <li class="design">
-                        <a href="#">Design</a>
+                        <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                            class="header-link">Design</a>
                     </li>
                 </ul>
             </nav>
@@ -48,10 +49,70 @@
     </header>
 
     <section class="online-wrapper">
+        <div class="online-content-wrapper">
+            <div class="online-text">
+                Watch your favorite animal online
+            </div>
+            <div class="online-btn-wrapper">
+                <button class="online-btn"><img src="../../assets/Frame 37.svg" alt="#"> watch online</button>
+            </div>
+        </div>
+        <div class="online-scroller-wrapper">
+            <div class="online-line">
+                <img src="../../assets/line.png" alt="">
+            </div>
+            <div class="online-scroller-container">
+                <div class="online-scroller">
+                    <div class="scroller-animal">
+                        <img src="../../assets/scroll-animals/Rectangle 2.png" alt="">
+                    </div>
+                    <div class="scroller-animal-panda">
+                        <img src="../../assets/small.png" alt="">
+                    </div>
+                    <div class="scroller-animal">
+                        <img src="../../assets/scroll-animals/Rectangle 6.png" alt="">
+                    </div>
+                    <div class="scroller-animal">
+                        <img src="../../assets/scroll-animals/Rectangle 3.png" alt="">
+                    </div>
+                    <div class="scroller-animal">
+                        <img src="../../assets/scroll-animals/fox.png" alt="" class="hidden-fox">
+                    </div>
+                </div>
+                <div class="scroller-range">
+                    <div class="actual-animal">02/<span class="transparent-num">07</span></div>
+                    <input class="input-range" type="range" min="1" max="8" step="1" value="2">
+                </div>
+            </div>
 
+        </div>
+        <div class="online-icons">
+            <div class="online-icon">
+                <a href="https://www.instagram.com/">
+                    <img src="../../assets/icons/instagram 1.svg" alt="">                 
+                </a>
+            </div>
+            <div class="online-icon">
+                <a href="https://twitter.com/">
+                    <img src="../../assets/icons/twit.svg" alt="">               
+                </a>
+            </div>
+            <div class="online-icon">
+                <a href="https://youtube.com/">
+                    <img src="../../assets/icons/youtube.svg" alt="">               
+                </a>
+            </div>
+            <div class="online-icon">
+                <a href="https://vk.com/">
+                    <img src="../../assets/icons/vk.svg" alt="">
+                </a>
+            </div>
+        </div>
     </section>
 
 
+
 </body>
+<script src="./main.js"></script>
 
 </html>

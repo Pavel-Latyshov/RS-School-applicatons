@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 * {
-    margin: 0 auto;
+    margin: 0;
+    /* display: block; */
 
 }
 
 body {
+    margin: 0 auto;
     width: 1920px;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,15 +15,19 @@ body {
 .header-wrapper { 
     width: 1920px;
     height: 94px;
-    /* background-color: #bb5656; */
+    background-color: #ffffff;
     background-size: 100%;
+}
+
+.header-wrapper-active {
+    background-color: #333333;
 }
 
 .header-content-wrapper {
     display: flex;
     height: 94px;
     padding-right: 150px;
-    padding-left: 150px;
+    padding-left: 150px; 
     justify-content: space-between;
     font-family: inherit;
 }
@@ -33,6 +39,10 @@ body {
     padding: 16px 0px 25px 0px;
     width: 60px;
     height: 42px;
+}
+
+.logo-active {
+    color: #ffffff;
 }
 
 .logo-zoo {
@@ -78,6 +88,10 @@ a {
     font-weight: 500;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .about {
     font-weight: 900;
     text-decoration: underline;
@@ -104,6 +118,14 @@ a {
     border-radius: 190px;
 }
 
+.view-btn-active {
+    background-color: #4f4f4f;
+}
+
+.view-btn:hover {
+    cursor: pointer;
+}
+
 .view-ball {
    position: absolute;
    width: 20px;
@@ -112,15 +134,200 @@ a {
    border-radius: 50%;
    left: 6px;
    top: 5px;
+   transition: all 0.3s ease-in;
 }
+
+.toggle-active {
+    position: absolute;
+    width: 20px;
+    height: 20px; 
+    background-color: #1b1b1b;
+    border-radius: 50%;
+    left: 28px;
+    top: 5px;  
+}
+
+
 
 /* view btn */
 
 /* online */
 
 .online-wrapper {
-    height: 900px;
+    position: relative;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 940px;
     background-image: url(../../assets/Rectangle\ 32.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    overflow: hidden;
+
+}
+
+.online-content-wrapper {
+    padding-top: 206px;
+    padding-left: 210px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.online-text {
+    width: 793px;
+    padding-bottom: 37px;
+    font-size: 89px;
+    font-weight: 900;
+    line-height: 104px;
+    color: #fefefe;
+}
+
+.online-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 245px;
+    height: 56px;
+    border: none;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    border-radius: 3px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+    outline: none;
+    transition: 0.2s ease-in; 
+}
+
+.online-btn:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #040e0b;
+}
+
+.online-btn img {
+    padding-right: 5px;
+}
+
+
+/* scroller!!!!! */
+
+.online-scroller-wrapper {
+    position: absolute;
+    bottom: 115px;
+    right: -44px;
+    width: 1124px;
+    height: 421px;
+}
+
+/* .online-scroller-container {
+    justify-content: center;
+    align-items: center;
+} */
+
+.online-line {
+    position: absolute;
+    padding-top: 170px;
+    z-index: 0;
+}
+
+
+
+.online-scroller {
+    padding-left: 135px;
+    display: grid;
+    grid-template-columns: 140px 245px 140px 140px 140px;
+    gap: 46px;
+    align-items: center;
+
+    
+}
+
+
+.scroller-animal {
+    
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transition: all 0.2s ease-out;
+
+}
+
+.scroller-animal img {
+    width: 140px;
+    border-radius: 3px;
+    
+}
+
+.scroller-animal:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.scroller-animal-panda {
+    transition: all 0.2s ease-out;
+
+    width: 245px;
+    z-index: 1;
+}
+
+.scroller-animal-panda:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* inpur range!!!! */
+
+.scroller-range {
+    position: absolute;
+    right: 560px;
+    bottom: -25px;
+}
+
+.input-range {
+    appearance: none;
+    width: 245px;
+    height: 5px;
+    outline: none;
+    background-color: #D8D8D8;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+  
+  .input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fefefe;
+    width: 30px;
+    height: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+  .input-range::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+}
+
+.actual-animal {
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    color: #FEFEFE;
+}
+
+.transparent-num {
+    font-weight: 900;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.online-icons {
+    position: absolute;
+    bottom: 115px;
+    display: grid;
+    gap: 15px;
 }

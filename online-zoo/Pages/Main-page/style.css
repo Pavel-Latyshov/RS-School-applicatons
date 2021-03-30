@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+* {
+    margin: 0 auto;
+
+}
+
+body {
+    width: 1920px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header-wrapper { 
+    width: 1920px;
+    height: 94px;
+    /* background-color: #bb5656; */
+    background-size: 100%;
+}
+
+.header-content-wrapper {
+    display: flex;
+    height: 94px;
+    padding-right: 150px;
+    padding-left: 150px;
+    justify-content: space-between;
+    font-family: inherit;
+}
+
+/* logo */
+
+.logo-wrapper {
+    text-align: center;
+    padding: 16px 0px 25px 0px;
+    width: 60px;
+    height: 42px;
+}
+
+.logo-zoo {
+    font-weight: 900;
+    line-height: 42px;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.logo-online {
+    font-weight: 900;
+    line-height: 9px;
+    font-size: 18px;
+    letter-spacing: 2px; 
+}
+
+/* logo */
+
+
+/* navbar */
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-wrapper {
+    display: flex;
+    gap: 83px;
+
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.about:hover {
+    text-decoration: none;
+}
+
+
+/* navbar */
+
+/* viev btn */
+
+.view-wrapper {
+    align-self: center;
+}
+
+.view-btn {
+    position: relative;
+    width: 54px;
+    height: 30px;
+    background-color: #F2F2F2;
+    border-radius: 190px;
+}
+
+.view-ball {
+   position: absolute;
+   width: 20px;
+   height: 20px; 
+   background-color: #ffffff;
+   border-radius: 50%;
+   left: 6px;
+   top: 5px;
+}
+
+/* view btn */
+
+/* online */
+
+.online-wrapper {
+    height: 900px;
+    background-image: url(../../assets/Rectangle\ 32.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

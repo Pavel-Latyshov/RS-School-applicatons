@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
     margin: 0;
     /* display: block; */
@@ -996,3 +996,131 @@ a:hover {
     font-size: 14px;
     color: #BDBDBD;
 }
+
+
+/* map */
+
+.map-wrapper {
+    /* width: 1920px; */
+    height: 904px;
+    background-color: #f2f2f2;
+    background-position: inherit;
+}
+
+.dark .map-wrapper {
+    background-color: #4f4f4f;
+    
+}
+
+.map-container {
+    width: 1920px;
+    height: 904px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-title {
+    /* margin-bottom: 60px; */
+    margin-top: 100px;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    color: #333333;
+}
+
+.map-img-container {
+    margin-top: 60px;
+    width: 1200px;
+    height: 500px;
+    /* border: 1px solid black; */
+    background-image: url("../../assets/map/map-light.svg");
+    background-repeat: no-repeat;
+} 
+
+.dark .map-img-container {
+    background-image: url("../../assets/map/map-dark.svg");
+    background-repeat: no-repeat;
+}
+
+.map-btn {
+    margin-top: 35px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.map-location-eagle {
+    position: relative;
+}
+
+.map-eagle {
+    position: relative;
+    width: 67px;
+    height: 94px;
+    background-image: url("../../assets/map/Vector.svg");
+    background-repeat: no-repeat;
+    top: 80px;
+    left: 120px;
+
+}
+
+.map-eagle-icon {
+    position: absolute;
+    left: 11px;
+    top: 10px;
+}
+.map-eagle:hover {
+    background-image: url("../../assets/map/Vector-hover.svg");
+    cursor: pointer;
+}
+
+.map-eagle:hover .map-eagle-info {
+    visibility: initial;
+}
+
+
+
+/* map CARD */
+.map-eagle-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    width: 436px;
+    height: 150px;
+    background: #FEFEFE;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    border-radius: 8px;
+    left: -70px;
+    bottom: 100px;
+    visibility: hidden;
+}
+
+
+.map-info-text {
+    display: grid;
+    gap: 8px;
+}
+
+.map-info-title {
+    font-weight: 900;
+    font-size: 18px;
+    color: #333333;
+}
+
+.region {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.map-info_text {
+    font-weight: normal;
+    font-size: 14px;
+    display: grid;
+}
+.map-info_text p{
+    padding-bottom: 6px;
+}
+/* map CARD //// */

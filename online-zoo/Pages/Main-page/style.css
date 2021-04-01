@@ -575,20 +575,31 @@ a:hover {
     cursor: pointer;
     transform: scale(1.01);
     box-shadow: 5px 5px 5px 5px #00000050;
+
+
+
 }
+
+/* .zoo-img:hover img {
+    filter: brightness(60%);
+
+} */
 
 .zoo-img img {
     border-radius: 5px;
+    z-index: 0;
 }
 
 .zoo-info {
     width: 100%;
+    height: 399px;
     padding-top: 10px;
     padding-left: 22px;
-    background-color: #00000060;
+    background-color: #00000080;
     position: absolute;
     display: grid;
-    bottom: -145px;
+    /* align-items: flex-end; */
+    bottom: -410px;
     transition: .5s ease-in-out bottom;
     border-radius: 5px;
     cursor:initial;
@@ -600,6 +611,7 @@ a:hover {
 
 
 .zoo-text {
+    margin-top: 265px;
     padding-bottom: 14px;
     width: 185px;
     font-weight: normal;
@@ -612,6 +624,7 @@ a:hover {
     grid-template-columns: 113px 74px;
     gap: 10px;
     padding-bottom: 44px;
+
 
     /* width: 245px;
     height: 56px; */
@@ -635,6 +648,8 @@ a:hover {
     outline: none;
     transition: 0.2s ease-in; 
 }
+
+
 
 .zoo-btn:hover {
     cursor: pointer;
@@ -1049,9 +1064,13 @@ a:hover {
     justify-content: center;
 }
 
+/* eagle location !!!!!!!!!*/
+
 
 .map-location-eagle {
     position: relative;
+    width: 60px;
+    height: 85px;
 }
 
 .map-eagle {
@@ -1066,23 +1085,119 @@ a:hover {
 }
 
 .map-eagle-icon {
+    width: 37px;
+    height: 37px;
     position: absolute;
-    left: 11px;
-    top: 10px;
+    left: 14px;
+    top: 15px;
 }
 .map-eagle:hover {
     background-image: url("../../assets/map/Vector-hover.svg");
     cursor: pointer;
 }
 
-.map-eagle:hover .map-eagle-info {
+.map-eagle:hover .map-animal-info {
     visibility: initial;
 }
+
+/* eagle location////// */
+
+/* croc location!!!! */
+
+.map-croc {
+    position: relative;
+    width: 67px;
+    height: 94px;
+    background-image: url("../../assets/map/Vector.svg");
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 247px;
+
+}
+
+.map-location-croc {
+    position: relative;
+    width: 60px;
+    height: 85px;
+}
+
+
+.map-croc:hover {
+    background-image: url("../../assets/map/Vector-hover.svg");
+    cursor: pointer;
+}
+
+.map-croc:hover .map-animal-info {
+    visibility: initial;
+}
+
+/* croc////// */
+
+/* monk !!!! */
+
+.map-monk {
+    position: relative;
+    width: 67px;
+    height: 94px;
+    background-image: url("../../assets/map/Vector.svg");
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 572px;
+
+}
+
+.map-location-monk {
+    position: relative;
+    width: 60px;
+    height: 85px;
+}
+
+
+.map-monk:hover {
+    background-image: url("../../assets/map/Vector-hover.svg");
+    cursor: pointer;
+}
+
+.map-monk:hover .map-animal-info {
+    visibility: initial;
+}
+/* monk///// */
+
+/* panda!!!! */
+
+.map-panda {
+    position: relative;
+    width: 67px;
+    height: 94px;
+    background-image: url("../../assets/map/Vector.svg");
+    background-repeat: no-repeat;
+    bottom: 160px;
+    left: 900px;
+
+}
+
+.map-location-panda {
+    position: relative;
+    width: 60px;
+    height: 85px;
+}
+
+
+.map-panda:hover {
+    background-image: url("../../assets/map/Vector-hover.svg");
+    cursor: pointer;
+}
+
+.map-panda:hover .map-animal-info {
+    visibility: initial;
+}
+
+/* panda///// */
 
 
 
 /* map CARD */
-.map-eagle-info {
+.map-animal-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1096,6 +1211,16 @@ a:hover {
     left: -70px;
     bottom: 100px;
     visibility: hidden;
+}
+
+.dark .map-animal-info {
+    background: #333333;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+}
+
+.map-info-img img{
+    width: 65px;
+    height: 65px;
 }
 
 
@@ -1124,3 +1249,188 @@ a:hover {
     padding-bottom: 6px;
 }
 /* map CARD //// */
+
+
+/* footer */
+
+
+.footer-wrapper {
+    background-color: #333333;
+}
+
+.footer-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 1920;
+    height: 751px;
+}
+
+
+/* footer-logo */
+
+.footer-logo-wrapper {
+    text-align: center;
+    padding: 16px 0px 25px 0px;
+    margin-right: 766px;
+    width: 60px;
+    height: 42px;
+    transition:  0.2s ease-in-out;
+
+}
+
+.footer-logo-wrapper:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+
+.footer-logo-zoo {
+    font-weight: 900;
+    line-height: 42px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+
+}
+
+.footer-logo-online {
+    font-weight: 900;
+    line-height: 9px;
+    font-size: 18px;
+    letter-spacing: 2px; 
+    color: #ffffff;
+
+}
+
+/* footer-logo////// */
+
+
+/* footer nav  */
+
+.footer-nav-wrapper {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+.footer-nav-wrapper li a {
+    color: #ffffff;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* button footer */
+.footer-btn-wrapper {
+    margin-left: 112px;
+
+}
+
+/* button-footer//// */
+
+
+/* footer-form */
+
+.footer-form-wrapper {
+    padding-top: 57px;
+}
+
+.footer-contact-title {
+    font-weight: 900;
+    font-size: 20px;
+    color: #FEFEFE;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-name {
+    font-family: inherit;
+    padding-top: 33px;
+    width: 383px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    background: transparent;
+    outline: none;
+    color: #FEFEFE;
+    font-size: 14px;
+
+}
+
+
+.contact-name::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E0E0E0;
+}
+
+.contact-email {
+    font-family: inherit;
+    width: 383px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    background: transparent;
+    outline: none;
+    color: #FEFEFE;
+    font-size: 14px;
+}
+
+.contact-email::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E0E0E0;
+}
+
+
+.contact-field {
+    width: 383px;
+    height: 115px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.contact-legend {
+    padding-left: 3px;
+    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.contact-area {
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+    border: none;
+    color: #FEFEFE;
+    outline: none;
+    resize: none;
+}
+
+.contact-form label {
+
+    color: #BDBDBD;
+
+}
+
+.contact-check {
+    margin-right: 6px;
+    color: #333333;
+
+}
+
+/* footer-form///// */

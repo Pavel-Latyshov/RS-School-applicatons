@@ -28,8 +28,8 @@ const App = () => {
             toggleBall.classList.add('toggle-active')
             header.classList.add('header-wrapper-active')
             body.classList.add('dark')
-            worksWrapper.classList.add('dark')
-            worksInfoWrapper.classList.add('light-dark-background')
+            // worksWrapper.classList.add('dark')
+            // worksInfoWrapper.classList.add('light-dark-background')
             toggleFlag = false
         } else {
             a.forEach(element => {
@@ -46,12 +46,11 @@ const App = () => {
             toggleBall.classList.remove('toggle-active')
             header.classList.remove('header-wrapper-active')
             body.classList.remove('dark')
-            worksWrapper.classList.remove('dark')
-            worksInfoWrapper.classList.remove('light-dark-background')
+            // worksWrapper.classList.remove('dark')
+            // worksInfoWrapper.classList.remove('light-dark-background')
             toggleFlag = true
         }
     })
-    
 }
 
 document.addEventListener('DOMContentLoaded', App)

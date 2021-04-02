@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
     /* display: block; */
 
 }
 
+.align {
+
+}
+
 body {
-    margin: 0 auto;
-    width: 1920px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* margin: 0 auto; */
+    /* width: 1920px; */
     font-family: 'Roboto', sans-serif;
     background-color: #fbfbfb;
 }
@@ -36,10 +46,11 @@ body {
 
 
 .header-wrapper { 
-    width: 1920px;
+    margin: 0 auto;
+    /* width: 1920px; */
     height: 94px;
     background-color: #ffffff;
-    background-size: 100%;
+    /* background-size: 100%; */
 }
 
 .header-wrapper-active {
@@ -47,12 +58,19 @@ body {
 }
 
 .header-content-wrapper {
+    margin: 0 auto;
+    width: 1920px;
+    background-color: #ffffff;
     display: flex;
     height: 94px;
     padding-right: 150px;
     padding-left: 150px; 
     justify-content: space-between;
     font-family: inherit;
+}
+
+.dark .header-content-wrapper {
+    background-color: #333333;
 }
 
 /* logo */
@@ -181,19 +199,38 @@ a:hover {
 /* view btn */
 
 /* online */
-.online-wrapper {
-    position: relative;
-    padding-left: 150px;
-    padding-right: 150px;
-    height: 940px;
+.online-block {
+    margin: 0 auto; 
+    /* background-size: 100% 100%; */
+    /* background-size: 100%; */
     background-image: url(../../assets/Rectangle\ 32.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+
+}
+
+@media (max-width: 1620px) {
+    .online-block {
+        width: fit-content;
+
+
+    }
+}
+
+.online-wrapper {
+    margin: 0 auto;
+    width: 1920px;
+    position: relative;
+    padding-left: 150px;
+    /* padding-right: 150px; */
+    height: 940px;
+
     overflow: hidden;
 
 }
 
 .online-content-wrapper {
+    width: 1920px;
     padding-top: 206px;
     padding-left: 210px;
     display: flex;
@@ -476,8 +513,18 @@ a:hover {
 
 
 /* works-info (ourmissioin etc.) */
+.works-full-screen-wrapper {
+    margin: 0 auto;
+    background: #F2F2F2;
+}
+
+.dark .works-full-screen-wrapper {
+    background: #4f4f4f;
+
+}
 
 .works-info-wrapper {
+    margin: 0 auto;
     width: 1920px;
     height: 413px;
     display: grid;
@@ -525,8 +572,9 @@ a:hover {
 
 .zoo-wrapper {
     display: grid;
-    width: 1920px;
+    /* width: 1920px; */
     height: 854px;
+    /* width: fit-content; */
     align-items: center;
     background-color: #fbfbfb;
 
@@ -758,7 +806,8 @@ a:hover {
 /* pay!!! */
 
 .pay-wrapper {
-    width: 1920px;
+    /* width: 1920px; */
+    margin: 0 auto;
     height: 755px;
     background-color: #f2f2f2;
     display: grid;
@@ -771,11 +820,19 @@ a:hover {
 }
 
 .pay-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 1920px;
     display: grid;
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+    background-color: #f2f2f2;   
+}
+
+.dark .pay-container {
+    background-color: #4f4f4f;
 }
 
 .pay-title {
@@ -835,8 +892,9 @@ a:hover {
 /* test!!!! */
 
 .test-wrapper {
+    margin: 0 auto;
     display: grid;
-    width: 1920px;
+    /* width: 1920px; */
     height: 810px;
     align-items: center;
     background-color: #fbfbfb;
@@ -847,10 +905,17 @@ a:hover {
 }
 
 .test-container {
+    width: 1920px;
+    margin: 0 auto;
     display: grid;
     justify-content: center;
     /* text-align: center; */
     gap: 30px;
+    background-color: #fbfbfb;
+}
+
+.dark .test-container {
+    background-color: #333333;
 }
 
 .test-title {
@@ -1017,6 +1082,7 @@ a:hover {
 
 .map-wrapper {
     /* width: 1920px; */
+    margin: 0 auto;
     height: 904px;
     background-color: #f2f2f2;
     background-position: inherit;
@@ -1028,11 +1094,18 @@ a:hover {
 }
 
 .map-container {
+    margin: 0 auto;
     width: 1920px;
     height: 904px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f2f2f2;
+
+}
+
+.dark .map-container {
+    background-color: #4f4f4f;   
 }
 
 .map-title {
@@ -1258,14 +1331,18 @@ a:hover {
 
 
 .footer-wrapper {
+    margin: 0 auto;
     background-color: #333333;
 }
 
 .footer-container {
+    margin: 0 auto;
     padding-left: 150px;
     padding-right: 150px;
-    width: 1920;
+    width: 1920px;
     height: 751px;
+    background-color: #333333;
+
 }
 
 

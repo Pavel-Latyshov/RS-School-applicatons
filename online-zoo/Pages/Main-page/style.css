@@ -1098,6 +1098,7 @@ a:hover {
 
 .map-eagle:hover .map-animal-info {
     visibility: initial;
+
 }
 
 /* eagle location////// */
@@ -1211,6 +1212,8 @@ a:hover {
     left: -70px;
     bottom: 100px;
     visibility: hidden;
+    /* transition: all .2s ease; */
+
 }
 
 .dark .map-animal-info {
@@ -1339,6 +1342,7 @@ a:hover {
 
 .footer-form-wrapper {
     padding-top: 57px;
+    display: flex;
 }
 
 .footer-contact-title {
@@ -1396,7 +1400,8 @@ a:hover {
 
 
 .contact-field {
-    width: 383px;
+    padding: 8px;
+    width: 386px;
     height: 115px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
@@ -1427,10 +1432,165 @@ a:hover {
 
 }
 
-.contact-check {
+/* check-box */
+
+/* .contact-check {
     margin-right: 6px;
     color: #333333;
 
+} */
+
+.checkbox {
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox + .checkbox {
+    margin-top: 15px;
+
+}
+
+.checkbox__real {
+    width: 1px;
+    height: 1px; 
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.checkbox__fake {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    vertical-align: bottom;
+}
+
+.checkbox__real:checked + .checkbox__fake {
+    background-color: #BDBDBD;
+}
+
+.checkbox__real:checked + .checkbox__fake::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: ""; 
+    width: 13px;
+    height: 13px;
+    background-image: url('../../assets/icons/check.svg');
+    background-size: initial;
+    background-position: center;
+    transform: translate(-50%,-50%);
+}
+
+.checkbox__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.checkbox__real:checked ~ .checkbox__title {
+    font-weight: bold;
+}
+
+/* check-box */
+
+.contact-submit {
+    position: relative;
+    left: 261px;
+    display: flex;
+    padding: 0;
+    width: 108px;
+    background: transparent;
+    border: none;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    outline: none;
+    background: url("../../assets/icons/send-arrow.svg") no-repeat center right;
+    transition: .3s;
+}
+
+.contact-submit:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* footer-form///// */
+
+/* footer-adress */
+
+.footer-adress-wrapper {
+    padding-left: 478px;
+}
+
+.footer-adress-title {
+    padding-bottom: 35px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+}
+
+address {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FEFEFE;
+}
+
+
+address a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FEFEFE;
+    
+}
+
+address p{
+    padding-bottom: 5px;
+}
+
+.address-container {
+    margin-bottom: 15px;
+}
+
+.footer-icons {
+    width: 125px;
+    height: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* nora */
+
+.footer-noora-wrapper {
+    
+}
+
+.nora-line {
+    margin-top: 60px;
+    background-image: url('../../assets/icons/nora-line.svg');
+    width: 1620px;
+    height: 2px;
+}
+
+.nora-text {
+    margin-top: 28px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.nora-text p {
+    padding-bottom: 5px;
+}

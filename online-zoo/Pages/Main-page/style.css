@@ -140,7 +140,6 @@ a:hover {
 }
 
 .about {
-    font-weight: 900;
     text-decoration: underline;
 }
 
@@ -272,8 +271,9 @@ a:hover {
 }
 
 .online-btn:hover {
+    transform: scale(1.05);
     cursor: pointer;
-    box-shadow: 1px 1px 1px 1px #040e0b;
+    /* box-shadow: 1px 1px 1px 1px #040e0b; */
 }
 
 .online-btn img {
@@ -409,7 +409,10 @@ a:hover {
 /* works!!!! */
 
 .works-wrapper {
+    margin: 0 auto;
+    display: grid;
     background-color: #fbfbfb;
+    /* justify-content: center; */
 }
 
 .dark .works-wrapper {
@@ -417,11 +420,19 @@ a:hover {
 }
 
 .works-online-wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
     display: grid;
     gap: 30px;
     justify-content: center; 
     padding-bottom: 100px;  
 }
+
+/* .dark .works-online-wrapper {
+    background-color: #333333;
+
+} */
+
 
 .works-title {
     width: 790px;
@@ -571,6 +582,7 @@ a:hover {
 /* zooo scroller */
 
 .zoo-wrapper {
+    margin: 0 auto;
     display: grid;
     /* width: 1920px; */
     height: 854px;
@@ -581,6 +593,8 @@ a:hover {
 }
 
 .zoo-container {
+    margin: 0 auto;
+    width: 1920px;
     display: grid;
     gap: 30px;
 
@@ -1436,7 +1450,7 @@ a:hover {
 
 .contact-name {
     font-family: inherit;
-    padding-top: 33px;
+    /* padding-top: 33px; */
     width: 383px;
     height: 30px;
     border: none;

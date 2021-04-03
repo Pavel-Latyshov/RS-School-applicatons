@@ -221,6 +221,10 @@ a:hover {
     /* box-shadow: 1px 1px 1px 1px #040e0b; */
 }
 
+.map-btn a {
+    text-decoration: none;
+}
+
 .online-btn img {
     padding-right: 5px;
 }
@@ -682,8 +686,9 @@ a:hover {
 }
 
 .footer-logo-wrapper:hover {
-    text-decoration: none;
-    transform: scale(1.05);
+    /* text-decoration: none;
+    transform: scale(1.05); */
+    cursor: default;
 }
 
 

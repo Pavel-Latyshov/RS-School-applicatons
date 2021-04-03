@@ -253,6 +253,10 @@ a:hover {
     height: 56px;
 }
 
+.online-btn-wrapper a {
+    text-decoration: none;
+}
+
 .online-btn {
     display: flex;
     justify-content: center;
@@ -339,16 +343,107 @@ a:hover {
 
 
 .scroller-animal-panda {
+    position: relative;
     transition: all 0.2s ease-out;
 
     width: 245px;
     z-index: 1;
 }
 
+.scroller-animal-panda img {
+    width: 245px;
+    height: 352px;
+    border-radius: 5px;
+}
+
 .scroller-animal-panda:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
+.scroller-animal-panda-info {
+    position: absolute;
+    width: 245px;
+    height: 352px;
+    bottom: 0px;
+}
+
+
+
+.online-animal-info {
+    width: 100%;
+    height: 399px;
+    padding-top: 10px;
+    padding-left: 22px;
+    /* background-color: #00000080; */
+    position: absolute;
+    display: grid;
+    /* align-items: flex-end; */
+    bottom: 0px;
+    transition: .5s ease-in-out bottom;
+    border-radius: 5px;
+    /* cursor:initial; */
+}
+
+.online-animal-btn-wrapper {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.online-animal-btn-wrapper a {
+    text-decoration: none;
+}
+.scroller-panda-item {
+    filter: brightness(70%);
+    transition: all .3s ease;
+}
+
+.scroller-panda {
+    /* filter: brightness(70%); */
+    transition: all .3s ease;
+}
+
+.scroller-panda:hover {
+    filter: brightness(70%);
+}
+
+
+
+.online-button {
+    width: 113px;
+    height: 25px;
+    background: url("../../assets/zoo-scroller/Frame\ 23.svg");
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: .3s ease;
+}
+.online-button:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.donate-button {
+    width: 74px;
+    height: 25px;
+    background: url("../../assets/zoo-scroller/Frame\ 24.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.donate-button:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 /* inpur range!!!! */
@@ -660,6 +755,7 @@ a:hover {
     padding-top: 10px;
     padding-left: 22px;
     background-color: #00000080;
+    /* background: transparent; */
     position: absolute;
     display: grid;
     /* align-items: flex-end; */
@@ -762,6 +858,10 @@ a:hover {
 .zoo-scroller-range {
     display: grid;
     justify-content: center;
+}
+
+.zoo-scroller-range a {
+    text-decoration: none;
 }
 
 .zoo-range {
@@ -1151,6 +1251,10 @@ a:hover {
     margin-top: 35px;
     display: grid;
     justify-content: center;
+}
+
+.map-btn a {
+    text-decoration: none;
 }
 
 /* eagle location !!!!!!!!!*/

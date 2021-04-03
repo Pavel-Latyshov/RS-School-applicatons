@@ -141,6 +141,8 @@ a:hover {
 
 .about {
     text-decoration: underline;
+    pointer-events: none;
+
 }
 
 .about:hover {
@@ -1684,4 +1686,9 @@ address p{
 
 .nora-text p {
     padding-bottom: 5px;
+    cursor: default;
+
+}
+.nora-text p span{
+    cursor: default;
 }

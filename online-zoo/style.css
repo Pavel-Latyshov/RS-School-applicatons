@@ -204,7 +204,7 @@ a:hover {
     margin: 0 auto; 
     /* background-size: 100% 100%; */
     /* background-size: 100%; */
-    background-image: url(../../assets/Rectangle\ 32.png);
+    background-image: url(./assets/Rectangle\ 32.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -411,7 +411,7 @@ a:hover {
 .online-button {
     width: 113px;
     height: 25px;
-    background: url("../../assets/zoo-scroller/Frame\ 23.svg");
+    background: url("./assets/zoo-scroller/Frame\ 23.svg");
     background-color: transparent;
     border: none;
     outline: none;
@@ -425,7 +425,7 @@ a:hover {
 .donate-button {
     width: 74px;
     height: 25px;
-    background: url("../../assets/zoo-scroller/Frame\ 24.svg");
+    background: url("./assets/zoo-scroller/Frame\ 24.svg");
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
@@ -837,13 +837,13 @@ a:hover {
 .zoo-scroller-left {
     width: 30px;
     height: 30px;
-    background-image: url("../../assets/zoo-scroller/Group.svg");
+    background-image: url("./assets/zoo-scroller/Group.svg");
     background-repeat: no-repeat;
     transition: .3s ease-in-out;
 }
 
 .dark .zoo-scroller-left {
-    background-image: url("../../assets/zoo-scroller/left-light-arrow.svg");
+    background-image: url("./assets/zoo-scroller/left-light-arrow.svg");
 }
 
 .zoo-scroller-left:hover {
@@ -855,13 +855,13 @@ a:hover {
 .zoo-scroller-right {
     width: 30px;
     height: 30px;
-    background-image: url("../../assets/zoo-scroller/right-arrow.svg");
+    background-image: url("./assets/zoo-scroller/right-arrow.svg");
     background-repeat: no-repeat;
     transition: .3s ease-in-out;
 }
 
 .dark .zoo-scroller-right {
-    background-image: url("../../assets/zoo-scroller/right-light-arrow.svg");
+    background-image: url("./assets/zoo-scroller/right-light-arrow.svg");
 }
 
 .zoo-scroller-right:hover {
@@ -996,7 +996,7 @@ a:hover {
     gap: 18px;
     width: 245px;
     height: 245px;
-    background-image: url("../../assets/pay-icons/round.svg");
+    background-image: url("./assets/pay-icons/round.svg");
     align-items: center;
     justify-content: center;
 }
@@ -1093,7 +1093,7 @@ a:hover {
     display: flex;
     /* width: 70px;
     height: 70px; */
-    /* background-image: url("../../assets/test-icons/Ellipse\ 46.svg"); */
+    /* background-image: url("./assets/test-icons/Ellipse\ 46.svg"); */
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
@@ -1124,13 +1124,13 @@ a:hover {
 .test-left {
     width: 30px;
     height: 30px;
-    background-image: url("../../assets/zoo-scroller/Group.svg");
+    background-image: url("./assets/zoo-scroller/Group.svg");
     background-repeat: no-repeat;
     transition: .3s ease-in-out;
 }
 
 .dark .test-left {
-    background-image: url("../../assets/zoo-scroller/left-light-arrow.svg");
+    background-image: url("./assets/zoo-scroller/left-light-arrow.svg");
 }
 
 .test-left:hover {
@@ -1142,13 +1142,13 @@ a:hover {
 .test-right {
     width: 30px;
     height: 30px;
-    background-image: url("../../assets/zoo-scroller/right-arrow.svg");
+    background-image: url("./assets/zoo-scroller/right-arrow.svg");
     background-repeat: no-repeat;
     transition: .3s ease-in-out;
 }
 
 .dark .test-right {
-    background-image: url("../../assets/zoo-scroller/right-light-arrow.svg");
+    background-image: url("./assets/zoo-scroller/right-light-arrow.svg");
 }
 
 .test-right:hover {
@@ -1255,12 +1255,12 @@ a:hover {
     width: 1200px;
     height: 500px;
     /* border: 1px solid black; */
-    background-image: url("../../assets/map/map-light.svg");
+    background-image: url("./assets/map/map-light.svg");
     background-repeat: no-repeat;
 } 
 
 .dark .map-img-container {
-    background-image: url("../../assets/map/map-dark.svg");
+    background-image: url("./assets/map/map-dark.svg");
     background-repeat: no-repeat;
 }
 
@@ -1287,7 +1287,7 @@ a:hover {
     position: relative;
     width: 67px;
     height: 94px;
-    background-image: url("../../assets/map/Vector.svg");
+    background-image: url("./assets/map/Vector.svg");
     background-repeat: no-repeat;
     top: 80px;
     left: 120px;
@@ -1302,7 +1302,7 @@ a:hover {
     top: 15px;
 }
 .map-eagle:hover {
-    background-image: url("../../assets/map/Vector-hover.svg");
+    background-image: url("./assets/map/Vector-hover.svg");
     cursor: pointer;
 }
 
@@ -1319,7 +1319,7 @@ a:hover {
     position: relative;
     width: 67px;
     height: 94px;
-    background-image: url("../../assets/map/Vector.svg");
+    background-image: url("./assets/map/Vector.svg");
     background-repeat: no-repeat;
     top: 5px;
     left: 247px;
@@ -1334,7 +1334,7 @@ a:hover {
 
 
 .map-croc:hover {
-    background-image: url("../../assets/map/Vector-hover.svg");
+    background-image: url("./assets/map/Vector-hover.svg");
     cursor: pointer;
 }
 
@@ -1350,7 +1350,7 @@ a:hover {
     position: relative;
     width: 67px;
     height: 94px;
-    background-image: url("../../assets/map/Vector.svg");
+    background-image: url("./assets/map/Vector.svg");
     background-repeat: no-repeat;
     top: 20px;
     left: 572px;
@@ -1365,7 +1365,7 @@ a:hover {
 
 
 .map-monk:hover {
-    background-image: url("../../assets/map/Vector-hover.svg");
+    background-image: url("./assets/map/Vector-hover.svg");
     cursor: pointer;
 }
 
@@ -1380,7 +1380,7 @@ a:hover {
     position: relative;
     width: 67px;
     height: 94px;
-    background-image: url("../../assets/map/Vector.svg");
+    background-image: url("./assets/map/Vector.svg");
     background-repeat: no-repeat;
     bottom: 160px;
     left: 900px;
@@ -1395,7 +1395,7 @@ a:hover {
 
 
 .map-panda:hover {
-    background-image: url("../../assets/map/Vector-hover.svg");
+    background-image: url("./assets/map/Vector-hover.svg");
     cursor: pointer;
 }
 
@@ -1701,7 +1701,7 @@ a:hover {
     content: ""; 
     width: 13px;
     height: 13px;
-    background-image: url('../../assets/icons/check.svg');
+    background-image: url('./assets/icons/check.svg');
     background-size: initial;
     background-position: center;
     transform: translate(-50%,-50%);
@@ -1731,7 +1731,7 @@ a:hover {
     color: #FEFEFE;
     text-transform: uppercase;
     outline: none;
-    background: url("../../assets/icons/send-arrow.svg") no-repeat center right;
+    background: url("./assets/icons/send-arrow.svg") no-repeat center right;
     transition: .3s;
 }
 
@@ -1799,7 +1799,7 @@ address p{
 
 .nora-line {
     margin-top: 60px;
-    background-image: url('../../assets/icons/nora-line.svg');
+    background-image: url('./assets/icons/nora-line.svg');
     width: 1620px;
     height: 2px;
 }

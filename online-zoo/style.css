@@ -1638,6 +1638,7 @@ a:hover {
 }
 
 .contact-area {
+    max-width: 370px;
     font-family: 'Roboto', sans-serif;
     background: transparent;
     border: none;

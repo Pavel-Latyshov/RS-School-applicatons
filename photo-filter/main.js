@@ -6,40 +6,30 @@ const App = () => {
     let nextBtn = document.querySelector('.btn-next')
     let loadPic = document.querySelector('input[type="file"]')
     const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext('2d')
     var root = document.querySelector(':root');
-    
-    
+  
 //FILTERS
     let inputChanger = (e) => {
         if (e.target.name == 'blur') {
             outputs[0].value = e.target.value
             root.style.setProperty('--blur', `${outputs[0].value}px`);
-            // blurCanvas(outputs[0].value)
-            // image.style.filter = `blur(${outputs[0].value}px)`
         } else if (e.target.name == 'invert') {
             outputs[1].value = e.target.value
             root.style.setProperty('--invert', `${outputs[1].value}%`);
-            // invertCanvas(outputs[1].value)
         } else if (e.target.name == 'sepia') {
             outputs[2].value = e.target.value
             root.style.setProperty('--sepia', `${outputs[2].value}%`);         
-            // sepiaCanvas(outputs[2].value)
         } else if (e.target.name == 'saturate') {
             outputs[3].value = e.target.value
             root.style.setProperty('--saturate', `${outputs[3].value}%`);
-            // saturateCanvas(outputs[3].value)
         } else if (e.target.name == 'hue') {
             outputs[4].value = e.target.value
             root.style.setProperty('--hue', `${outputs[4].value}deg`);
-            // hueCanvas(outputs[4].value)
-
         } 
         drawImage()
     }
 
     inputs.forEach(input => input.addEventListener('input', inputChanger))
-
     //FILTERS
 
     // КНОПКА RESET
@@ -60,14 +50,7 @@ const App = () => {
                 i.value = 100
             }
         }
-
-        blurCanvas(0)
-        hueCanvas(0)
-        invertCanvas(0)
-        saturateCanvas(100)
-        sepiaCanvas(0)
-
-
+        drawImage()
     })
     // КНОПКА RESET
 
@@ -134,29 +117,6 @@ const App = () => {
     drawImage()
     // CANVAS
 
-    // CANVAS FILTERS
-    function blurCanvas (filterStats) {
-        ctx.filter = `blur(${filterStats}px)`
-        ctx.drawImage(image, 0, 0)
-    }
-    function invertCanvas (filterStats) {
-        ctx.filter = `invert(${filterStats}%)`
-        ctx.drawImage(image, 0, 0)
-    }
-    function sepiaCanvas (filterStats) {
-        ctx.filter = `sepia(${filterStats}%)`
-        ctx.drawImage(image, 0, 0)
-    }
-    function saturateCanvas (filterStats) {
-        ctx.filter = `saturate(${filterStats}%)`
-        ctx.drawImage(image, 0, 0)
-    }
-    function hueCanvas (filterStats) {
-        ctx.filter = `hue-rotate(${filterStats}deg)`
-        ctx.drawImage(image, 0, 0)
-    }
-    // CANVAS FILTERS
-
     // DOWNLOAD
     let saveBtn = document.querySelector('.btn-save')
     saveBtn.addEventListener('click', (e) => {
@@ -180,8 +140,6 @@ const App = () => {
         }
       })
     // FULLSCREEN
-
-
 }
 
 document.addEventListener('DOMContentLoaded', App)

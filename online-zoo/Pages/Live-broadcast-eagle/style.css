@@ -459,6 +459,7 @@ a:hover {
     background-color: #C4C4C4;
     border-radius: 50%;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .live-slider-item-hover {

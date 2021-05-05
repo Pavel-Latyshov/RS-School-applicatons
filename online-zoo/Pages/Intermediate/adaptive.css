@@ -1,0 +1,566 @@
+@media (max-width: 1200px) {
+    html {
+        width: 1200px;
+    }
+    body {
+        width: 1200px;
+    }
+    .header-wrapper {
+        width: 1200px;
+    }
+
+    .header-content-wrapper {
+        width: 1200px;
+    }
+
+    header .navbar-wrapper {
+        padding-top: 5px;
+        padding-left: 170px;
+        gap: 90px;
+    }
+
+
+    .map-title {
+        margin-top: 50px;
+    }
+
+    .map-text-wrapper {
+        margin-bottom: 35px;
+    }
+
+    .map-wrapper {
+        width: 1200px;
+        height: 1110px;
+    }
+    
+    .map-scroller-wrapper {
+        gap: 20px;
+    }
+
+    .map-container {
+        overflow: hidden;
+        width: 1200px;
+        height: 1110px;
+
+    }
+
+    .map-scroller-cover {
+        width: 700px;
+        overflow: hidden;
+    }
+    .map-scroller {
+        position: relative;
+        left: 0px;
+        padding-left: 30px;
+        gap: 15px;
+    }
+
+    .map-img-container {
+        margin: 0px;
+        width: 800px;
+        height: 388px;
+        background-size: contain;
+    }
+
+    .works-input-range {
+        position: relative;
+        top: -30px;
+    }
+
+    .map-btn {
+        margin-bottom: 100px;
+    }
+
+    .map-eagle {
+        top: 20px;
+        left: 80px;
+    }
+
+    .map-croc {
+        top: -55px;
+        left: 150px; 
+    }
+
+    .map-monk {
+        top: -75px;
+        left: 370px;
+    }
+
+    .map-panda {
+        bottom: 210px;
+        left: 580px; 
+    }
+
+
+    .footer-wrapper {
+        width: 1200px;
+        height: 737px;
+    }
+
+    .footer-container {
+        width: 1200px;
+        height: 737px; 
+    }
+
+    .footer-logo-wrapper {
+        margin-right: 400px;
+    }
+
+    footer .navbar-wrapper {
+        gap: 73px;
+    }
+
+    .footer-adress-wrapper {
+        position: relative;
+        padding-left: 76px;
+        top: -10px;
+    }
+
+
+    .footer-btn-wrapper {
+        position: relative;
+    }
+
+    .footer-btn {
+        font-size: 16px;
+        width: 275px;
+        position: absolute;
+        right:  210px;
+        top: 293px;
+    }
+
+    .footer-noora-wrapper {
+        padding-top: 5px;
+    }
+
+    .nora-line {
+        width: 900px;
+    }
+
+
+
+}
+
+@media (max-width: 640px) {
+    .view-wrapper {
+        display: flex;
+    }
+
+    .view-btn {
+        margin-right: 34px;
+    }
+
+    .berger {
+        margin-top: 8px;
+        position: relative;
+        width: 40px;
+        height: 21px;
+        background-image: url("./../../assets/berger/menu.svg");
+        transition: .3s ease;
+    }
+
+    .berger:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .dark .berger {
+        background-image: url("./../../assets/berger/dark-menu.svg");
+    }
+    header .navbar-wrapper {
+        margin-top: 230px;
+        position: relative;
+        left: 300px;
+        padding: 5px 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 5px;
+        z-index: 4;
+    }
+    .visability {
+        visibility: hidden;
+
+    }
+
+    .dark .navbar-wrapper {
+        background-color: #333333;
+    }
+
+    html {
+        width: 640px;
+        /* overflow-x: hidden; */
+
+    }
+    body {
+        width: 640px;
+        /* overflow-x: hidden; */
+    }
+    .header-wrapper {
+        width: 640px;
+    }
+
+    .header-content-wrapper {
+        position: fixed;
+        width: 640px;
+        padding-left: 20px;
+        padding-right: 20px;
+        z-index: 10;
+    }
+
+    .map-wrapper {
+        width: 640px;
+        height: 1010px;
+    }
+    
+    .map-container {
+        overflow: hidden;
+        width: 640px;
+        height: 1010px;
+
+    }
+
+    .map-scroller-cover {
+        width: 530px;
+        overflow: hidden;
+    }
+    .map-scroller {
+        gap: 12px;
+    }
+    .map-scroller-wrapper {
+        gap: 0px;
+
+        
+    }
+    .map-text-wrapper {
+        width: 600px;
+    }
+
+    .map-img-container {
+        margin-top: 25px;
+        width: 600px;
+        height: 290px;
+        background-size: contain;
+    }
+
+    .map-eagle {
+        top: -10px;
+        left: 50px;
+    }
+
+    .map-croc {
+        top: -90px;
+        left: 100px; 
+    }
+
+    .map-monk {
+        top: -120px;
+        left: 270px;
+    }
+
+    .map-panda {
+        bottom: 250px;
+        left: 430px; 
+    }
+    .map-btn {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+
+    
+    .footer-wrapper {
+        width: 640px;
+        height: 1068px;
+    }
+    .footer-container {
+        padding: 0 20px;
+        width: 640px;
+        height: 1068px;
+    }
+
+    .footer-nav-wrapper {
+        position: relative;
+    }
+
+    footer .navbar-wrapper {
+        position: absolute;
+        height: 91px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        top: 160px;
+        left: 0px;
+    }
+
+    .footer-form-wrapper {
+        padding-top: 130px;
+        flex-direction: column;
+    }
+
+    .footer-adress-wrapper {
+        padding-top: 87px;
+        padding-left: 0;
+    }
+
+    .footer-btn .online-btn {
+        font-size: 16px;
+        width: 275px;
+        position: absolute;
+        right: -30px;
+        top: -35px;
+    }
+
+    .footer-btn {
+        right: -20px;
+        top: -35px;
+    }
+
+    .nora-line {
+        margin-top: 50px;
+        width: 600px;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    header .navbar-wrapper {
+        margin-top: 230px;
+        position: relative;
+        left: 140px;
+        padding: 5px 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 5px;
+        z-index: 4;
+    }
+    .view-btn {
+        margin-right: 24px;
+    }
+    html {
+        width: 320px;
+        overflow-x: hidden;
+
+    }
+    body {
+        width: 320px;
+        overflow-x: hidden;
+    }
+    .header-wrapper {
+        width: 320px;
+    }
+    .header-content-wrapper {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .map-wrapper {
+        width: 320px;
+        height: 780px;
+    }
+    
+    .map-container {
+        overflow: hidden;
+        width: 320px;
+        height: 780px;
+
+    }
+    .map-title {
+        margin-top: 21px;
+        font-size: 24px;
+    }
+    .map-text-wrapper {
+        margin-top: 10px;
+        width: 280px;
+        height: 182px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .map-scroller-wrapper {
+        padding-top: 14px;
+    }
+
+    .map-scroller-cover {
+        width: 220px;
+        overflow: hidden;
+    }
+    .map-scroller {
+        padding-left: 0px;
+        gap: 5px;
+    }
+    .map-scroller-img img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .map-scroller-img:hover {
+        width: 85px;
+        height: 85px;
+        background: url("../../assets/map/map-hover.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+        cursor: pointer;
+    
+    }
+    .map-scroller-img:hover img {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 5px;
+        left: 6px
+
+    }
+    
+    .map-scroller-img img {
+        /* transition: all .2s ease-in; */
+    }
+    
+    
+    .map-scroller-active img{
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 5px;
+        left: 6px;
+    }
+    
+    .map-scroller-active {
+        width: 85px;
+        height: 85px;
+        background: url("../../assets/map/map-hover.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .map-scroler-img:hover {
+    
+        cursor: pointer;
+    }
+
+    .map-btn {
+        position: relative;
+        top: -10px;
+    }
+
+    .map-img-container {
+        margin-top: 25px;
+        width: 280px;
+        height: 146px;
+        background-size: contain;
+    }
+
+    .map-eagle {
+        width: 34px;
+        height: 47px;
+        background-size: contain;
+        top: -10px;
+        left: 23px;
+    }
+    .map-croc {
+        width: 34px;
+        height: 47px;
+        background-size: contain;
+        top: -90px;
+        left: 45px; 
+    }
+
+    .map-monk {
+        width: 34px;
+        height: 47px;
+        background-size: contain;
+        top: -150px;
+        left: 125px;
+    }
+    .map-panda {
+        width: 34px;
+        height: 47px;
+        background-size: contain;
+        bottom: 255px;
+        left: 200px; 
+    }
+    .map-eagle-icon {
+        width: 19px;
+        height: 19px;
+        left: 7px;
+        top: 7px;
+    }
+    
+
+    .footer-wrapper {
+        width: 320px;
+        height: 1100px;
+    }
+    .footer-container {
+        padding: 0 10px;
+        width: 320px;
+        height: 1100px;
+    }
+
+    .footer-logo-wrapper {
+        bottom: 55px;
+    }
+
+    .footer-nav-wrapper {
+        height: 174px;
+        padding-top: 0px;
+    }
+    footer .navbar-wrapper {
+        top: 122px;
+    }
+
+    .footer-form-wrapper {
+        padding-top: 60px;
+    }
+
+    .checkbox {
+        position: relative;
+        top: -9px;
+    }
+
+    .contact-submit {
+        position: relative;
+        top: -9px;
+    }
+
+    .contact-name {
+        width: 300px;
+    }
+    .contact-email {
+        width: 300px;
+    }
+    .contact-field {
+        width: 300px;
+        height: 124px;
+    }
+    .contact-area  {
+        width: 280px;
+    }
+    .contact-submit {
+        left: 190px;
+    }
+    .footer-btn-wrapper {
+        margin: 0px;
+    }
+    .footer-adress-wrapper {
+        padding-top: 55px;
+    }
+    .footer-btn .online-btn {
+        right: 193px;
+        top: 815px;
+    }
+    .footer-noora-wrapper {
+        padding-top: 120px;
+    }
+    .nora-line {
+        width: 300px;
+        height: 1px;
+        background-color: #fefefe;
+    }
+}

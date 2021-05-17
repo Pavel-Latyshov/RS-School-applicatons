@@ -71,4 +71,6 @@ const Idb: indexDbType = {
         })
     }
 }
+
+// window.indexedDB.deleteDatabase("match-match-db");
 export default Idb

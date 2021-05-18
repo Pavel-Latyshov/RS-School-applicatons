@@ -207,9 +207,16 @@ input:valid {
     border: 10px double black;
 }
 
+.score:hover {
+    cursor: pointer;
+}
+
 .settings {
     padding: 5px;
     border: 10px double black;
+}
+.settings:hover {
+    cursor: pointer;
 }
 
 .about {
@@ -312,3 +319,110 @@ input:valid {
     border: 2px solid black;
     border-radius: 5px;
 }
+
+// SCORE 
+.score_wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 1000px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+// SETTINGS
+.settings_wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 1000px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.settings_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.game_difficulty {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 450px;
+    height: 250px;
+    background-color: #ffc877;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.game_difficulty div:hover {
+    transform: scale(1.05);
+}
+
+
+.difficulty_easy {
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black;
+    transition: 0.3s ease;
+}
+
+.difficulty_medium {
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black;
+    transition: 0.3s ease;
+}
+
+.difficulty_hard {
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black;
+    transition: 0.3s ease;
+
+}
+
+.game_animals {
+    width: 385px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black; 
+    transition: 0.3s ease;
+
+}
+
+.settings_active  {
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.01);
+    border: 10px double white;
+    background-color: black;
+    border: 10px double white;
+    transition: 0.3s ease;
+
+}
+
+
+
+.game_design {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 450px;
+    height: 250px;
+    background-color: #ffc877;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+
+
+

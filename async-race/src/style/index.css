@@ -1,3 +1,6 @@
+@import url(./header.css);
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 body {
-    background-color: black;
+    font-family: 'Racing Sans One', cursive;
 }

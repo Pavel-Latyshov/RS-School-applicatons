@@ -1,13 +1,25 @@
 body {
-    background-color:navajowhite;
+    margin: 0 auto;
+    height: 1800px;
+    /* height: 1800px; */
+    background-image: url('../img/wp3368268-racing-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 .header_wrapper {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
     width: 500px;
     gap: 40px;
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 8px;
     /* background-color: rosybrown; */
 }
 
@@ -94,6 +106,13 @@ body {
     justify-content: center;
     width: 80px;
     border: 2px solid black;
+    transition: 0.2s ease;
+
+}
+
+.create_btn:hover {
+    color: white;
+    background-color: black;
 }
 
 .update_btn {
@@ -101,6 +120,13 @@ body {
     justify-content: center;
     width: 80px;
     border: 2px solid black;
+    transition: 0.2s ease;
+
+}
+
+.update_btn:hover {
+    color: white;
+    background-color: black;
 }
 
 .create_btn:hover {
@@ -167,7 +193,6 @@ body {
     transform: scale(1.01);
     cursor: pointer;
     border-radius: 8px;
-
 }
 
 .reset_btn {

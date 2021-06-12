@@ -1,6 +1,11 @@
 @import url(./header.css);
+@import url(./garage.css);
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 body {
     font-family: 'Racing Sans One', cursive;
+}
+
+.hidden {
+    display: none;
 }

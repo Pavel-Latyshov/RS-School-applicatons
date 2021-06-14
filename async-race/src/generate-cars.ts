@@ -16,10 +16,8 @@ const generateCars = () => {
                     'Content-Type': 'application/json'
                 }
             })
-
         }
         getCars() 
-        // const pushCar = await response.json()
         return 1
     }
     generateBtn.addEventListener('click', generateBtnHandler)

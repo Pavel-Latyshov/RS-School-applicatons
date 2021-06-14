@@ -1,9 +1,9 @@
+import RaceState from "./race-state";
+import winnersArr from "./winners-array";
 const AnimateCar = (res: any, id: string) => {
     const singleCar: HTMLElement = document.querySelector(`.single__car_${id}`);
     const unitStart: HTMLElement = document.querySelector(`.start_${id}`)
       const stopEngine: HTMLElement = document.querySelector(`.stop_${id}`);
-    //   const startEngine: HTMLElement = document.querySelector(`.start__car_${id}`);
-    const RaceState: any = {};
     const checkIfCrash = async (id: string, status: string) => {
         const response = await fetch(`http://127.0.0.1:3000/engine?id=${id}&status=${status}`, {
             method: 'GET'
@@ -23,26 +23,27 @@ const AnimateCar = (res: any, id: string) => {
         if (timeFraction > 1) timeFraction = 1;
         const progress = timeFraction;
         singleCar.style.left = `${progress * 85}%`;
-        unitStart.style.backgroundColor = 'rgb(3, 168, 3)'
+        unitStart.style.backgroundColor = 'rgb(13, 238, 13)'
         if (RaceState[id].isCarStoped !== true && RaceState[id].driveStatus !== 500) {
-            //   startEngine.style.color = 'red';
+            stopEngine.style.backgroundColor = 'darkred'
             unitStart.style.pointerEvents = 'none';
             if (timeFraction < 1) requestAnimationFrame(animate);
         } else if (RaceState[id].driveStatus === 500) {
-            //   startEngine.style.color = 'red';
-            //   startEngine.style.pointerEvents = 'none';
             unitStart.style.pointerEvents = 'none';
             unitStart.style.backgroundColor = 'darkgreen';
+            stopEngine.style.backgroundColor = 'red'
             singleCar.style.transform = 'rotate(-40deg)';
         }
         if (timeFraction === 1) {
             unitStart.style.pointerEvents = 'all';
-            //   startEngine.style.pointerEvents = 'all';
               unitStart.style.backgroundColor = 'darkgreen';
-            //   GetWinner(res, id);
-            //   ConstructWinnerArray();
+              stopEngine.style.backgroundColor = 'red'
+              console.log(res, id);
+              let num = 500/res.velocity
+
+              winnersArr.push([id, num.toFixed(1)])
+              console.log(winnersArr);
         }
     });
-    //   stopEngine.addEventListener('click', stopEngineHandler);
 };
 export default AnimateCar;

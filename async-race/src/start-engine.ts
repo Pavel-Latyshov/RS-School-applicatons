@@ -8,6 +8,8 @@ const startEngine = () => {
             method: 'GET'
         })
         const data = await response.json() 
+        console.log(data);
+        
         AnimateCar(data, element.id)
         return data      
     }

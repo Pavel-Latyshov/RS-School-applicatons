@@ -124,6 +124,7 @@
     background-color: darkgreen;
     border-radius: 50%;
     border: 5px solid black;
+    transition: 0.5s ease;
 }
 
 .unit_start:hover {
@@ -135,8 +136,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: darkred;
+    background-color: red;
     border: 5px solid black;
+    transition: 0.5s ease;
 }
 
 .unit_stop:hover {
@@ -152,7 +154,12 @@
     position: relative;
     width: 80px;
     height: 30px;
+    /* transform: rotateY(180deg); */
+}
+
+.unit_car svg {
     transform: rotateY(180deg);
+
 }
 
 .unit_track {

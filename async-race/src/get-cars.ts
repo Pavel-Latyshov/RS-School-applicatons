@@ -32,8 +32,11 @@ const getCars = async () => {
     prevPage()
     startEngine()
     stopEngine()
-    race()
-    RaceReset()
+
+
+
+
+    
     return 1
 };
 

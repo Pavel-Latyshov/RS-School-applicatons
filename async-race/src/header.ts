@@ -2,6 +2,9 @@ import Garage from './garage';
 import GaragePage from './garage-page';
 import generateCars from './generate-cars';
 import GetWinners from './get-winners';
+import race from './race';
+import RaceReset from './race-reset';
+import sortWinners from './sort';
 import Winners from './winners-page';
 
 const Header = () => {
@@ -12,7 +15,8 @@ const Header = () => {
         <div class="winner_btn">WINNERS</div>
     </div>
 
-    <div class="winners_wrapper hidden"><div class="winner_unit"><div class="winner_info"><div class="info_num">NUMBER</div><div class="info_car">CAR</div><div class="info_name">NAME</div><div class="info_wins">WINS</div><div class="info_score">BEST TIME</div></div>
+    <div class="winners_wrapper hidden">
+    <div class="winner_info"><div class="info_num">NUMBER</div><div class="info_car">CAR</div><div class="info_name">NAME</div><div class="info_wins">WINS</div><div class="info_score">BEST TIME</div></div><div class="winner_unit">
     </div>
 </div>
 
@@ -38,11 +42,14 @@ const Header = () => {
         <div class="show_winner"></div>
         
 <div class="garage_wrapper"></div>`;
+sortWinners()
+  GetWinners()
   Garage();
   generateCars()
   Winners()
   GaragePage()
-  GetWinners()
+  race()
+  
 };
 
 export default Header;

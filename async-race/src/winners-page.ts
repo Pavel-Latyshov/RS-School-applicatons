@@ -1,4 +1,5 @@
 import GaragePage from "./garage-page"
+import GetWinners from "./get-winners"
 
 const Winners = () => {
     const winnersBtn: HTMLElement = document.querySelector('.winner_btn')
@@ -11,6 +12,7 @@ const Winners = () => {
         headerContainer.classList.add('hidden')
         garageContainer.classList.add('hidden')
         winnersWrapper.classList.remove('hidden')
+        GetWinners()
     }
     winnersBtn.addEventListener('click', winnersBtnHandler)
     

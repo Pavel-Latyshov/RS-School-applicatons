@@ -8,6 +8,9 @@ const deleteCar = () => {
         })
         const data = await response.json()
         getCars() 
+        const deletWinner = await fetch(`http://127.0.0.1:3000/winners/${element.id}`, {
+            method: 'DELETE'
+        })
         return data
     }
     removeBtn.forEach(element => {

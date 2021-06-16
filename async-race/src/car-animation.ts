@@ -1,6 +1,10 @@
+import checkWinnersArray from "./check-winners-arr";
 import createWinner from "./create-winner";
+import GetWinners from "./get-winners";
+import GetWinnersArray from "./get-winners-arr";
 import RaceState from "./race-state";
 import showWinner from "./show-winner";
+import UpdateWinner from "./update";
 import winnersArr from "./winners-array";
 const AnimateCar = (res: any, id: string) => {
     const singleCar: HTMLElement = document.querySelector(`.single__car_${id}`);
@@ -40,16 +44,23 @@ const AnimateCar = (res: any, id: string) => {
             unitStart.style.pointerEvents = 'all';
               unitStart.style.backgroundColor = 'darkgreen';
               stopEngine.style.backgroundColor = 'red'
-              console.log(res, id);
+            //   console.log(res, id);
               let num = 500/res.velocity
 
               winnersArr.push([id, num.toFixed(1)])
-              console.log(winnersArr);
+            //   console.log(winnersArr);
               if (winnersArr.length === 1) {
                   showWinner()
-                  createWinner()
+                  GetWinnersArray()
+                  if (checkWinnersArray.includes(Number(winnersArr[0][0]))) {                      
+                    UpdateWinner()                  
+                  } else {
+                      createWinner()
+                  }
+                //   GetWinners()
               }
         }
     });
+
 };
 export default AnimateCar;

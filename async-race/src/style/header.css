@@ -248,7 +248,47 @@ body {
     z-index: 2;
 }
 
+.info_wins {
+    padding: 5px;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: middle;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+    transform: skewX(
+-30deg
+);
+}
 
+
+.info_wins:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.info_score {
+    padding: 5px;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: middle;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+    transform: skewX(
+-30deg
+);
+}
+.info_score:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 
 
 

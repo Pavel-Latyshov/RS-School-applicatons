@@ -1,10 +1,12 @@
 import RaceState from "./race-state"
+import showWinner from "./show-winner"
 import winnersArr from "./winners-array"
 
 const RaceReset = () => {
     const resetBtn: HTMLElement = document.querySelector('.reset_btn')
     const carsArray: Array<HTMLElement> = Array.from(document.querySelectorAll('.unit_car'))
     const raceBtn:HTMLElement = document.querySelector('.race_btn')
+    const showWinnerWrapper: HTMLElement = document.querySelector('.show_winner')
     const resetBtnHandler = () => {
         carsArray.forEach(async (element: HTMLElement) => {
             const response = await fetch(`http://127.0.0.1:3000/engine?id=${element.id}&status=started`, {
@@ -21,6 +23,7 @@ const RaceReset = () => {
                 singleCar.style.left = '0'; startEngine.style.backgroundColor = 'darkgreen'; stopEngine.style.backgroundColor = 'red'; singleCar.style.transform = 'rotate(0deg)'
             }, 400);
             raceBtn.style.pointerEvents = 'all'
+            showWinnerWrapper.innerText = ''
 
         });
         winnersArr.splice(0, winnersArr.length);           

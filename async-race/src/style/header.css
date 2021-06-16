@@ -239,6 +239,15 @@ body {
 
 }
 
+.show_winner {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 200px;
+    background-color: white;
+    z-index: 2;
+}
+
 
 
 

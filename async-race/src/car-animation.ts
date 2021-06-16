@@ -1,4 +1,6 @@
+import createWinner from "./create-winner";
 import RaceState from "./race-state";
+import showWinner from "./show-winner";
 import winnersArr from "./winners-array";
 const AnimateCar = (res: any, id: string) => {
     const singleCar: HTMLElement = document.querySelector(`.single__car_${id}`);
@@ -43,6 +45,10 @@ const AnimateCar = (res: any, id: string) => {
 
               winnersArr.push([id, num.toFixed(1)])
               console.log(winnersArr);
+              if (winnersArr.length === 1) {
+                  showWinner()
+                  createWinner()
+              }
         }
     });
 };

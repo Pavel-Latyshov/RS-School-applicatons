@@ -1,0 +1,32 @@
+.winner_unit {
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+
+}
+
+.winner_info {
+    display: grid;
+    grid-template-columns: auto 80px 100px auto 100px;
+    gap: 20px;
+    /* border: 3px solid black; */
+}
+
+.winner_info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.winner {
+    display: grid;
+    grid-template-columns: auto 80px 100px auto 100px;
+}
+
+.winner div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

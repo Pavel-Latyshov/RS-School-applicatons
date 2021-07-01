@@ -1,0 +1,21 @@
+.burger_btn {
+    display: flex;
+    justify-content: center;;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 40px;
+    background-color: black;
+}
+.burger_btn img{
+    border-radius: 8px;
+    background-color:blanchedalmond;
+    /* padding: 5px; */
+    width: 40px;
+    transition: all 0.3s ease;
+}
+
+.burger_btn img:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}

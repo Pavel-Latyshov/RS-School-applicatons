@@ -13,7 +13,7 @@ const SingleComponent = ({item}: any) => {
     return (
         <NavLink to={item[0]}>
         <div className={css.action__card}>{item[0]}
-        <img src={process.env.PUBLIC_URL + `${imageSrc}`}alt="#"/></div>
+        <img src={`${imageSrc}`}alt="#"/></div>
         </NavLink>
     )
 }

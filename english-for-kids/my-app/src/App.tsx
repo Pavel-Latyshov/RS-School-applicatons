@@ -25,7 +25,7 @@ const App = () => {
   const changeFlag = () => {
     if (vataJson === true) {
       setVataJson(false)
-      console.log(vataJson);
+      // console.log(vataJson);
     } else {
       setVataJson(true)
     }
@@ -42,7 +42,7 @@ const App = () => {
   })
   
   const renderGame = arr.map((item: any) => {
-    return <Route path={`/${item[0]}`} render={() => <GameComponent key={item} item={item}/>}/>
+    return <Route path={`/${item[0]}`} render={() => <GameComponent key={item} item={item} vataJson={vataJson}/>}/>
   })
   // const renderMainCards = arr.map((item: any) => {
   //   return <Route path={`/${item[0]}`} render={() => <SingleComponent key={item} item={item}/>}/>
@@ -50,11 +50,12 @@ const App = () => {
 
   return (
       <BrowserRouter>
-        <HeaderComponent dataJson={dataJson} changeFlag= {changeFlag}/>
+        <HeaderComponent dataJson={dataJson} changeFlag= {changeFlag} vataJson = {vataJson}/>
         <Switch>
-        {/* {renderComponent} */}
         {renderGame}
+        <div className="main_cards__wrapper">
         <Route path='/' render={() => renderComponent}/>
+        </div>
         </Switch>
       </BrowserRouter>
   )

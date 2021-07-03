@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
 .burger {
     position: relative;
-    left: -135px;
+    /* top: 150px; */
     margin: 10px;
     width: 120px;
     display: flex;
     flex-direction: column;
     background-color: black;
     border-radius: 8px;
+    transition: all 0.8s ease;
+    z-index: 10;
 }
+
 
 .burger_left {
     position: relative;
-    left: 0px;
+    /* top: 150px; */
     margin: 10px;
     width: 120px;
     display: flex;
     flex-direction: column;
     background-color: black;
     border-radius: 8px;
+    transition: all 0.8s ease;
+    z-index: 10;
+
 }
 .burger a {
     text-align: center;
@@ -30,13 +36,5 @@
     text-decoration: none;
     
 }
-.hidden {
-    display: none;
-}
 
-.left {
-    position: relative;
-    padding-left: 135px;
-    left: 0px
-}
 

@@ -1,0 +1,32 @@
+.train_card {
+    max-width: 320px;
+    margin: 20px;
+    background-color: cadetblue;
+}
+.train_card img {
+    width: 100%;
+}
+.train_panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.train_flip {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.train_word {
+    font-size:larger;
+    text-transform: uppercase;
+}
+
+.train_flip:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.train_flip img{
+    width: 100%;
+}

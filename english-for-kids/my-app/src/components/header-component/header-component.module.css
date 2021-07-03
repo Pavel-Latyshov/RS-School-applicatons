@@ -1,3 +1,11 @@
+.header_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 .burger_btn {
     display: flex;
     justify-content: center;;
@@ -18,4 +26,29 @@
 .burger_btn img:hover {
     cursor: pointer;
     transform: rotate(90deg);
+}
+
+.burger {
+    position: absolute;
+    /* top: 150px; */
+    transform: translateX(-100%);
+    transition:  0.8s;
+    z-index: 10000;
+
+}
+
+
+.burger_left {
+    position: absolute;
+    /* top: 150px; */
+    transform: translateX(0%);
+    transition: 0.8s ;
+    z-index: 1000000;
+
+}
+
+.train_btn {
+    width: 100px;
+    height: 50px;
+    /* background-color: royalblue; */
 }

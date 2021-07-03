@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,8 +36,12 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
+body {
+  background-color: rosybrown;
+
+}
 
 .main {
   display: grid;
@@ -74,5 +78,16 @@
 }
 
 .nav_links {
+  
+}
+
+.main_cards__wrapper {
+  position: relative;
+  /* top: -175px; */
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }

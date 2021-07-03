@@ -1,20 +1,19 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom';
 import css from './burger.module.css'
-const BurgerComponent = ({dataJson}: any) => {
-    let flag: boolean = true;
-    useEffect(()=> {
-        const navBtn = document.querySelector('.header-component_burger_btn__2m5vz img');
-        const navBtnHandler = () => {
-            if (flag === true) {
-                flag = false
-            } else if (flag === false) {flag = true}
-            console.log(flag);
+const BurgerComponent = ({dataJson, setFlag}: any) => {
+    // let flag: boolean = true;
+    // useEffect(()=> {
+    //     const navBtn = document.querySelector('.header-component_burger_btn__2m5vz img');
+    //     const navBtnHandler = () => {
+    //         if (flag === true) {
+    //             flag = false
+    //         } else if (flag === false) {flag = true}
+    //         console.log(flag);
                      
-        }
-        navBtn?.addEventListener('click', navBtnHandler)
-
-    })
+    //     }
+    //     navBtn?.addEventListener('click', navBtnHandler)
+    // })
 
     const linksNamesArray = [];
     for (let key of Object.keys(dataJson.sets)) {
@@ -26,6 +25,8 @@ const BurgerComponent = ({dataJson}: any) => {
             <div>{item}</div>
         </NavLink>)
     })
+
+    
 
         return (  
             <div className={css.burger}>

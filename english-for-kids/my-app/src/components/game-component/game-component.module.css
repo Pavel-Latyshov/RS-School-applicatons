@@ -1,0 +1,22 @@
+.main_cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.train_card {
+    
+}
+.train_card img {
+   width: 200px; 
+}
+
+.train_panel {
+    
+}
+
+.game_card {
+    border: 2px solid black;
+}

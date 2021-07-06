@@ -51,7 +51,14 @@ body {
 
 .hidden {
   display: none;
+
 }
+
+.events_none {
+    pointer-events: none;
+    opacity: 50%;
+}
+
 
 .nav_btn {
   margin: 20px;

@@ -2,6 +2,31 @@
     max-width: 320px;
     margin: 20px;
     background-color: cadetblue;
+    transition: 0.5s;
+}
+
+.train_card:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
+
+.train_card_flip {
+    transform:rotateY(180deg);
+    max-width: 320px;
+    margin: 20px;
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+
+.train_card_flip:hover {
+    cursor: pointer;
+
+    /* transform: scale(1.1); */
+}
+
+.train_card_flip img{
+    width: 100%;
 }
 .train_card img {
     width: 100%;
@@ -18,8 +43,27 @@
 }
 
 .train_word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
     font-size:larger;
     text-transform: uppercase;
+    transition: 0s;
+
+}
+
+.train_word_reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    transform:rotateY(180deg);
+    font-size:larger;
+    text-transform: uppercase;
+    transition: 0s;
+
+
 }
 
 .train_flip:hover {
@@ -29,4 +73,8 @@
 
 .train_flip img{
     width: 100%;
+}
+
+.hidden {
+    display: none;
 }

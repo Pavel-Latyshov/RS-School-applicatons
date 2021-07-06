@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom';
+import gameArr from '../game-state';
 import css from './burger.module.css'
 const BurgerComponent = ({dataJson, setFlag}: any) => {
     // let flag: boolean = true;
@@ -14,6 +15,9 @@ const BurgerComponent = ({dataJson, setFlag}: any) => {
     //     }
     //     navBtn?.addEventListener('click', navBtnHandler)
     // })
+    const clearGameArr = () => {
+        return gameArr.splice(0, gameArr.length)
+    }
 
     const linksNamesArray = [];
     for (let key of Object.keys(dataJson.sets)) {
@@ -21,7 +25,7 @@ const BurgerComponent = ({dataJson, setFlag}: any) => {
     }
     // console.log(linksNamesArray);
     const singleLink = linksNamesArray.map((item: any) => {
-        return (<NavLink to={item}>
+        return (<NavLink  to={item}>
             <div>{item}</div>
         </NavLink>)
     })

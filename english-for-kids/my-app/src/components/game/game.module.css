@@ -1,0 +1,14 @@
+.game_card {
+    margin: 20px;
+    max-width: 300px;
+    transition: 0.5s ease;
+}
+
+.game_card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.game_card img {
+    width: 100%;
+}

@@ -84,7 +84,7 @@ const App = () => {
   })
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL} >
       <HeaderComponent  dataJson={dataJson} changeFlag={changeFlag} vataJson={vataJson} setVataJson={setVataJson} setStars={setStars} stars={stars} setWordCheck={setWordCheck} starsClear={starsClear} setFlag={setFlag} flag={flag} toggleNav={toggleNav} hideNav={hideNav}/>
       <Switch>
         {renderGame}

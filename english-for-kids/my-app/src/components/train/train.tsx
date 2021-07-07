@@ -25,7 +25,6 @@ const Train = ({ item }: any) => {
             flipBtn?.removeEventListener('click', flipBtnHandler)
         }
 
-        // return flipBtn?.removeEventListener('click', ()=> {return 1})
     })
 
 

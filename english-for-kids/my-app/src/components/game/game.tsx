@@ -1,19 +1,15 @@
 import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import gameArr from '../game-state';
+import starsArr from '../start-state';
 import css from './game.module.css'
-const Game = ({ item, wordCheck, setWordCheck, shuffleArr }: any) => {
-    // const imageSrc = Object.keys(item[1])[0];
-
-    // console.log(item[1][0]);
-    // const cardCheck = document.querySelector(`.${css.game_card}`)
+const Game = ({ item, wordCheck, setWordCheck, shuffleArr, setStars }: any) => {
 
     useEffect(() => {
         const cardId = document.getElementById(`${item[1][0]}`)
         const cardCheckHandler = () => {
-            console.log(wordCheck);
-            if (cardId?.id === wordCheck) {
-                // console.log(true); 
+            setStars(true)
+             if (cardId?.id === wordCheck) {
                 if (gameArr.length === 0) {
                     cardId?.classList.add('events_none')
                     for (let i = 0; i < shuffleArr.length; i++) {
@@ -25,9 +21,16 @@ const Game = ({ item, wordCheck, setWordCheck, shuffleArr }: any) => {
                         }
                     }
                     setWordCheck(`${gameArr[0]}`)
+                    const audio = new Audio(`./souns/${gameArr[0]}.mp3`)
+                    const correctAudio = new Audio(`./souns/positive.wav`)
+                    correctAudio.play()
+                    const wordPlay = () => {
+                        audio.play()
+                    }
+                    starsArr.push('yellow')
+                    setTimeout(wordPlay, 2000)
+                    setStars(false)
                 } else {
-                    console.log(gameArr);
-                    
                     cardId?.classList.add('events_none')
                     for (let i = 0; i < gameArr.length; i++) {
                         if (gameArr[i] === wordCheck) {
@@ -35,17 +38,29 @@ const Game = ({ item, wordCheck, setWordCheck, shuffleArr }: any) => {
                         }
                     }
                     setWordCheck(`${gameArr[0]}`)
+                    const audio = new Audio(`./souns/${gameArr[0]}.mp3`)
+                    const correctAudio = new Audio(`./souns/positive.wav`)
+                    correctAudio.play()
+                    const wordPlay = () => {
+                        audio.play()
+                    }
+                    setTimeout(wordPlay, 2000)
+                    starsArr.push('yellow')       
+                    setStars(false)             
                 }
 
             } else {
-                // console.log(false);  
+                const wrongAudio = new Audio(`./souns/error.mp3`)
+                wrongAudio.play()
+                starsArr.push('empty')
+                setStars(false)  
+                setTimeout(setStars(true), 1)           
             }
         }
         cardId?.addEventListener('click', cardCheckHandler)
 
         return () => cardId?.removeEventListener('click', cardCheckHandler)
     })
-
     return (
 
         <div className={css.game_wrapper}>
@@ -53,7 +68,6 @@ const Game = ({ item, wordCheck, setWordCheck, shuffleArr }: any) => {
                 <img src={`${item[0]}`} alt="#" />
             </div>
         </div>
-
     )
 }
 

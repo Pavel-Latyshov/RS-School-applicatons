@@ -59,6 +59,9 @@ body {
     opacity: 50%;
 }
 
+.wrong {
+  transform: scale(1.001);
+}
 
 .nav_btn {
   margin: 20px;

@@ -1,20 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom';
 import gameArr from '../game-state';
 import css from './burger.module.css'
 const BurgerComponent = ({dataJson, setFlag}: any) => {
-    // let flag: boolean = true;
-    // useEffect(()=> {
-    //     const navBtn = document.querySelector('.header-component_burger_btn__2m5vz img');
-    //     const navBtnHandler = () => {
-    //         if (flag === true) {
-    //             flag = false
-    //         } else if (flag === false) {flag = true}
-    //         console.log(flag);
-                     
-    //     }
-    //     navBtn?.addEventListener('click', navBtnHandler)
-    // })
+    // links
+
+    let [link, setLink]=useState('/')
+
+    // const linkFunck =()=> {
+    //     setLink(window.location.pathname)
+        
+    //     console.log(link);
+    // }
+    
+
+    // links
+
+
     const clearGameArr = () => {
         return gameArr.splice(0, gameArr.length)
     }
@@ -25,8 +27,8 @@ const BurgerComponent = ({dataJson, setFlag}: any) => {
     }
     // console.log(linksNamesArray);
     const singleLink = linksNamesArray.map((item: any) => {
-        return (<NavLink  to={item}>
-            <div>{item}</div>
+        return (<NavLink to={item}>
+            <div  className={link===`/${item}` ?  css.red : undefined} >{item}</div>
         </NavLink>)
     })
 
@@ -35,7 +37,7 @@ const BurgerComponent = ({dataJson, setFlag}: any) => {
         return (  
             <div className={css.burger}>
                 <NavLink to={`/`}>
-                    <div>menu</div>
+                    <div className={link==='/' ? css.red : undefined} >menu</div>
                 </NavLink>
                 {singleLink}
             </div>            

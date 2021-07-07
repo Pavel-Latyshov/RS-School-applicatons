@@ -1,27 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import BurgerComponent from '../burger-component/burger';
-import TrainComponent from '../train-play-component/train';
+import TrainComponent from '../train-play-component/train-play';
 import css from './header-component.module.css'
 
 const HeaderComponent = ({ dataJson, changeFlag, vataJson }: any) => {
 
-    //   useEffect(() => {
-    //     const mainCover = document.querySelector('main_cover')
-    //     mainCover?.addEventListener('click', ()=> {
-    //       return 1
-    //     })
-    //     return () => mainCover?.removeEventListener('click', ()=> {
-    //       return 1
-    //     } )
-    //   })
-
-    // useEffect(()=> {
-    //     const burgerBtn = document.querySelector(`.${css.burger_btn}`)
-    //     burgerBtn?.addEventListener('click', ()=> {
-    //         console.log(1);
-
-    //     })
-    // })
     let [flag, setFlag] = useState(true)
     const toggleNav = () => {
         if (flag === true) {

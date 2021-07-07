@@ -21,3 +21,7 @@
 .game_card {
     border: 2px solid black;
 }
+
+.star img{
+    width: 10%;
+}

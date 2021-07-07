@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import css from './train.module.css'
+import css from './train-play.module.css'
 
 const TrainComponent = ({changeFlag, vataJson}:any) => {   
 

@@ -1,6 +1,7 @@
 .start_game_wrapper {
     margin: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -13,5 +14,9 @@
     width: 50px;
     height: 50px;
     background-color: crimson;
+}
+
+.star img {
+    max-width: 10%;
 }
 

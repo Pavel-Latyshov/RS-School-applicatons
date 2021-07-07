@@ -5,16 +5,23 @@ import SingleComponent from './components/single-componet/single-component';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import HeaderComponent from './components/header-component/header-component';
 import GameComponent from './components/game-component/game-component';
+import gameArr from './components/game-state';
 
 
 const App = () => {
   const [dataJson, setDataJson] = useState({ ...Data })
   const [vataJson, setVataJson] = useState(true)
+  let [wordCheck, setWordCheck] = useState('')
   const changeFlag = () => {
     if (vataJson === true) {
       setVataJson(false)
+      gameArr.splice(0, gameArr.length)
+      setWordCheck('')
+       
     } else {
       setVataJson(true)
+      gameArr.splice(0, gameArr.length)
+      setWordCheck('')
     }
   }
   const arr = [];
@@ -28,7 +35,7 @@ const App = () => {
 
   const renderGame = arr.map((item: any) => {
 
-    return <Route path={`/${item[0]}`} render={() => <GameComponent key={item} item={item} vataJson={vataJson} />} />
+    return <Route path={`/${item[0]}`} render={() => <GameComponent  key={item} item={item} vataJson={vataJson} wordCheck={wordCheck} setWordCheck={setWordCheck}/>} />
   })
 
 

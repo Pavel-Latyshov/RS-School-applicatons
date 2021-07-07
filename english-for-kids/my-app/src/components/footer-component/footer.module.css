@@ -1,0 +1,46 @@
+.footer_wrapper {
+    padding-top: 20px;
+    font-family: 'Jomhuria', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    
+    /* margin: 20px; */
+    /* padding: 50px 20px; */
+    border-top: 10px double black;
+    
+}
+
+/* .footer_wrapper a{
+    width: min-content;
+} */
+
+.git_link {
+    display: flex;
+    width: fit-content;
+}
+
+
+
+
+.rs_link {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.rs_link a{
+    width: 50%;
+}
+
+.rs_link  img{
+    width: 100%;
+}
+
+.date {
+    width: fit-content;
+
+}

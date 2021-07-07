@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import gameArr from '../game-state';
 import starsArr from '../start-state';
+import winArr from '../winState';
 import css from './game.module.css'
-const Game = ({ item, wordCheck, setWordCheck, shuffleArr, setStars }: any) => {
-
+const Game = ({ item, wordCheck, setWordCheck, shuffleArr, setStars, checkLength }: any) => {
+    
     useEffect(() => {
         const cardId = document.getElementById(`${item[1][0]}`)
         const cardCheckHandler = () => {
@@ -28,6 +29,7 @@ const Game = ({ item, wordCheck, setWordCheck, shuffleArr, setStars }: any) => {
                         audio.play()
                     }
                     starsArr.push('yellow')
+                    winArr.push('correct')
                     setTimeout(wordPlay, 2000)
                     setStars(false)
                 } else {
@@ -38,14 +40,16 @@ const Game = ({ item, wordCheck, setWordCheck, shuffleArr, setStars }: any) => {
                         }
                     }
                     setWordCheck(`${gameArr[0]}`)
-                    const audio = new Audio(`./souns/${gameArr[0]}.mp3`)
+                    // const audio = new Audio(`./souns/${gameArr[0]}.mp3`)
                     const correctAudio = new Audio(`./souns/positive.wav`)
                     correctAudio.play()
                     const wordPlay = () => {
+                        const audio = new Audio(`./souns/${gameArr[0]}.mp3`)
                         audio.play()
                     }
-                    setTimeout(wordPlay, 2000)
-                    starsArr.push('yellow')       
+                    setTimeout(wordPlay, 1500)
+                    starsArr.push('yellow') 
+                    winArr.push('correct')   
                     setStars(false)             
                 }
 

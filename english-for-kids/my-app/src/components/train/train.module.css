@@ -1,40 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 .train_card {
     max-width: 320px;
     margin: 20px;
-    background-color: cadetblue;
+    background-color: blanchedalmond;
+    font-family: 'Jomhuria', cursive;
+    font-size: 30px;
     transition: 0.5s;
 }
 
 .train_card:hover {
     cursor: pointer;
-
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .train_card_flip {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
     transform:rotateY(180deg);
     max-width: 320px;
     margin: 20px;
-    background-color: cadetblue;
+    background-color: blanchedalmond;
     transition: 0.5s;
 }
 
 .train_card_flip:hover {
     cursor: pointer;
-
-    /* transform: scale(1.1); */
 }
 
 .train_card_flip img{
     width: 100%;
+    height: 175px;
 }
 .train_card img {
     width: 100%;
+    height: 175px;
 }
 .train_panel {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    max-height: 50px;
 }
 
 .train_flip {
@@ -68,11 +73,12 @@
 
 .train_flip:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .train_flip img{
     width: 100%;
+    
 }
 
 .hidden {

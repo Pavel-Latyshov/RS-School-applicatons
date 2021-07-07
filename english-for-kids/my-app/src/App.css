@@ -39,7 +39,8 @@
 } */
 
 body {
-  background-color: rosybrown;
+  /* background-color: white; */
+  background-color:steelblue;
 
 }
 
@@ -92,12 +93,15 @@ body {
 }
 
 .main_cards__wrapper {
-  position: relative;
-  /* top: -175px; */
-  /* display: flex; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
+    padding: 0 2%;
+    position: relative;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.main_cards__wrapper a {
+  width: 300px;
 }

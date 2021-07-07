@@ -1,5 +1,7 @@
 .stars_wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .star {
     width: 10%;

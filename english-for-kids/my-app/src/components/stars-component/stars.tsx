@@ -15,10 +15,7 @@ const Stars = ({ item, shuffleArr, setWordCheck, wordCheck, stars, setStars}: an
     return (
 
         <div className={css.stars_wrapper}>
-            {/* <div>{starsArr.length !== 0 ? starsRender : undefined}</div> */}
             {stars=== false ? starsRender : starsRender}
-            {/* <div>{stars=== true ? starsRender : undefined}</div> */}
-
         </div>
 
     )

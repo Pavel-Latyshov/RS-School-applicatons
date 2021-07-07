@@ -1,10 +1,9 @@
 .train_btn{
     position: relative;
-    width: 100px;
+    width: 120px;
     height: 50px;
-    background-color: sandybrown;
+    background-color: blanchedalmond;
     /* border: 2px solid black; */
-    border-radius: 8px;
 }
 
 .train_btn:hover {
@@ -17,7 +16,6 @@
     width: 25px;
     height: 50px;
     background-color: black;
-    border-radius: 8px;
     transform: translateX(0%);
     transition: 0.5s;
 
@@ -26,22 +24,25 @@
 }
 .train_toggle_left{
     position: absolute;
-    transform: translateX(300%);
-
+    transform: translateX(380%);
     top: 0px;
     width: 25px;
     height: 50px;
     background-color: black;
-    border-radius: 8px;
     transition: 0.5s;
 
 
 }
 
 .train_text {
-    padding-top: 15px;
+    font-family: 'Jomhuria', cursive;
+    font-size: 40px;
+    /* background-color: black; */
+    color: black;
+    /* padding-top: 15px; */
     display: flex;
     /* text-align: center; */
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }

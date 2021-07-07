@@ -1,14 +1,23 @@
 .main_cards__wrapper {
-    display: flex;
-    /* perspective: 1000px; */
+    /* display: flex;
+    perspective: 1000px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; */
+
+    padding: 0 2%;
+    position: relative;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;    
+    transition: 0.3s;
 }
 
 .train_card {
-    
+    perspective: 500px;
+    transition: 0.3s;
 }
 .train_card img {
    width: 200px; 

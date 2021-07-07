@@ -1,4 +1,5 @@
 .header_btns{
+    padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,16 +11,24 @@
     display: flex;
     justify-content: center;;
     margin: 10px;
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 40px;
-    background-color: black;
+    /* border: 2px solid black; */
+    /* border-radius: 8px; */
+    width: 50px;
+    /* background-color: black; */
+    transition: 0.3s;
 }
+
+.burger_btn:active {
+    transform: rotate(20deg);
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+
 .burger_btn img{
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color:blanchedalmond;
     /* padding: 5px; */
-    width: 40px;
+    width: 50px;
     transition: all 0.3s ease;
 }
 

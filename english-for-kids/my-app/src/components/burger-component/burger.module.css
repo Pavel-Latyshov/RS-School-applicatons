@@ -34,6 +34,12 @@
     text-transform: uppercase;
     color: blanchedalmond;
     text-decoration: none;
+    border: 3px solid blanchedalmond;
+    transition: 0.2s;
+    
+}
+.burger a:hover {
+    transform: scale(1.04);
     
 }
 

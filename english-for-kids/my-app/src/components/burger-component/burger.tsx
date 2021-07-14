@@ -10,8 +10,9 @@ const BurgerComponent = ({ dataJson, setFlag, setVataJson, setStars, stars, setW
 
     let [link, setLink] = useState('')
     const adminFlag = () => {
-        setStars()
+        starsClear()
         setLogFlag(false)
+
     }
 
     const linksNamesArray = [];

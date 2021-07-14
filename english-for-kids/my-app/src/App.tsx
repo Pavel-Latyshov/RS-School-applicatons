@@ -114,12 +114,12 @@ useEffect(() => {
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL} >
-      {logFlag===true ?       <HeaderComponent dataJson={dataJson} changeFlag={changeFlag} vataJson={vataJson} setVataJson={setVataJson} setStars={setStars} stars={stars} setWordCheck={setWordCheck} starsClear={starsClear} setFlag={setFlag} flag={flag} toggleNav={toggleNav} hideNav={hideNav} setLogFlag={setLogFlag}  /> : <AdminHeader />}
+      {logFlag===true ?       <HeaderComponent dataJson={dataJson} changeFlag={changeFlag} vataJson={vataJson} setVataJson={setVataJson} setStars={setStars} stars={stars} setWordCheck={setWordCheck} starsClear={starsClear} setFlag={setFlag} flag={flag} toggleNav={toggleNav} hideNav={hideNav} setLogFlag={setLogFlag}  /> : <AdminHeader setLogFlag={setLogFlag}  />}
 
       <Switch>
           <Route path='/login' render={() => <Login />} />
           <Route path='/logup' render={() => <Logup />} />
-          <Route path='/admin' render={() => <AdminComponent />} />
+          <Route path='/admin' render={() => <AdminComponent dataJson={dataJson}/>} />
         {renderGame}
         <div onClick={hideNav} className="main_cards__wrapper">
           <Route path='/' render={() => renderComponent} />

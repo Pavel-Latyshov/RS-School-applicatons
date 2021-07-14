@@ -5,12 +5,19 @@ import useLoginPass from '../login-pass';
 import { PushSets } from '../sets-push';
 import starsArr from '../start-state';
 import css from './admin-header.module.css'
-const AdminHeader = ({ hideNav }: any) => {
+const AdminHeader = ({ setLogFlag }: any) => {
 
+    const history = useHistory()
+
+    const logOut = () => {
+        setLogFlag(true)
+        history.push('/')
+        
+    }
     return (
 
         <div className={css.admin_wrapper}>
-            <NavLink to={'/categories'}>
+            <NavLink to={'/admin'}>
                 <div>
                     categories
                 </div>
@@ -20,11 +27,10 @@ const AdminHeader = ({ hideNav }: any) => {
                     words
                 </div>
             </NavLink>
-            <NavLink to={'/logout'}>
-                <div>
+            
+                <div onClick={logOut}>
                     log out
                 </div>
-            </NavLink>
         </div>
 
     )

@@ -3,7 +3,7 @@ import BurgerComponent from '../burger-component/burger';
 import TrainComponent from '../train-play-component/train-play';
 import css from './header-component.module.css'
 
-const HeaderComponent = ({ dataJson, changeFlag, vataJson, setStars, stars, setWordCheck, starsClear, toggleNav, setFlag, flag, hideNav }: any) => {
+const HeaderComponent = ({ dataJson, changeFlag, vataJson, setStars, stars, setWordCheck, starsClear, toggleNav, setFlag, flag, hideNav, setLogFlag }: any) => {
     return (
         <div className={css.header}>
             <div className={css.header_btns}>
@@ -13,7 +13,7 @@ const HeaderComponent = ({ dataJson, changeFlag, vataJson, setStars, stars, setW
                 </div>
             </div>
             <div className={flag === true ? css.burger : css.burger_left}>
-                <BurgerComponent dataJson={dataJson} setFlag={setFlag} setStars={setStars} stars={stars} setWordCheck={setWordCheck} starsClear={starsClear}/>
+                <BurgerComponent dataJson={dataJson} setFlag={setFlag} setStars={setStars} stars={stars} setWordCheck={setWordCheck} starsClear={starsClear} setLogFlag={setLogFlag} />
             </div>
         </div>
     )

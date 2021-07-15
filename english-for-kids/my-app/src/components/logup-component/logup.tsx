@@ -5,7 +5,7 @@ import useLoginPass from '../login-pass';
 import { PushSets } from '../sets-push';
 import starsArr from '../start-state';
 import css from './logup.module.css'
-const Logup= ({ hideNav }: any) => {
+const Logup= ({ setUser }: any) => {
     const [regFlag, setRegFlag] = useState(true)
     const history = useHistory()
 
@@ -32,8 +32,9 @@ const Logup= ({ hideNav }: any) => {
         }
         if (data !== null && data.password === passValue.value) {
             history.push('/admin')
-            PushSets.pushSets(loginValue.value)
-            PushSets.pushWords(loginValue.value)
+            // PushSets.pushSets(loginValue.value)
+            // PushSets.pushWords(loginValue.value)
+            setUser(loginValue.value)
 
         } else if (data !== null){
             alert('WRONG PASSWORD')

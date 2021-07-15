@@ -1,3 +1,4 @@
+import { ADD_NEW_CATEGORY } from './types';
 const initialState: any = {
     category: {
         action_a: "./images/open.jpg",
@@ -12,8 +13,10 @@ const initialState: any = {
 }
 
 export const CategoriesReducer = (state = initialState, action: any) => {
-
     switch (action.type) {
-        default: return state
+        case ADD_NEW_CATEGORY: 
+            return {...state, category: action.payload}
+        default: 
+            return state
     }
 }

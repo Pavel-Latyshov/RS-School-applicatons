@@ -1,3 +1,4 @@
+import { ADD_NEW_WORD } from './types';
 const initialState = {
     words: {
         fly: ["./images/fly.jpg", "fly", "летать", "./souns/fly.mp3", "action_a"],
@@ -70,6 +71,8 @@ const initialState = {
 export const WordsReducer = (state = initialState, action: any) => {
     
     switch (action.type) {
+        case ADD_NEW_WORD: 
+            return {...state, words: action.payload}
         default: return state
     }
 }

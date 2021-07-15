@@ -15,11 +15,12 @@ import Logup from './components/logup-component/logup';
 import AdminComponent from './components/admin-component/admin-component';
 import { useSelector } from 'react-redux';
 import AdminHeader from './components/admin-header-component/admin-header';
+import AdminWordComponent from './components/admin-word-component/word-component';
 
 const App = () => {
   const categorySelector = useSelector((state: any) => state.category.category)
   const wordsSelector = useSelector((state: any) => state.words.words)
-  console.log(wordsSelector);
+  // console.log(wordsSelector);
   const data: any = {
     sets: {}
   }
@@ -46,12 +47,13 @@ const App = () => {
   const [wordCheck, setWordCheck] = useState('')
   const [stars, setStars] = useState(true)
   const [logFlag, setLogFlag] = useState(true)
+  const [user, setUser]=useState('')
 
 
 
 useEffect(() => {
     setDataJson(data)
-  }, [])
+  }, [categorySelector])
 
   const clearGameArr = () => {
     return gameArr.splice(0, gameArr.length)
@@ -111,15 +113,21 @@ useEffect(() => {
 
     return <Route path={`/${item[0]}`} render={() => <GameComponent key={item} item={item} vataJson={vataJson} wordCheck={wordCheck} setWordCheck={setWordCheck} setStars={setStars} stars={stars} starsClear={starsClear} hideNav={hideNav} />} />
   })
+  const renderAdminGame = arr.map((item: any) => {
+    
+    
+    return <Route path={`/${item[0]}admin`} render={() => <AdminWordComponent key={item} item={item} user={user}/>} />
+  })
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL} >
       {logFlag===true ?       <HeaderComponent dataJson={dataJson} changeFlag={changeFlag} vataJson={vataJson} setVataJson={setVataJson} setStars={setStars} stars={stars} setWordCheck={setWordCheck} starsClear={starsClear} setFlag={setFlag} flag={flag} toggleNav={toggleNav} hideNav={hideNav} setLogFlag={setLogFlag}  /> : <AdminHeader setLogFlag={setLogFlag}  />}
 
       <Switch>
-          <Route path='/login' render={() => <Login />} />
-          <Route path='/logup' render={() => <Logup />} />
-          <Route path='/admin' render={() => <AdminComponent dataJson={dataJson}/>} />
+          <Route path='/login' render={() => <Login setUser={setUser}/>} />
+          <Route path='/logup' render={() => <Logup setUser={setUser} />} />
+          <Route path='/admin' render={() => <AdminComponent dataJson={dataJson} user={user}/>} />
+        {renderAdminGame}
         {renderGame}
         <div onClick={hideNav} className="main_cards__wrapper">
           <Route path='/' render={() => renderComponent} />

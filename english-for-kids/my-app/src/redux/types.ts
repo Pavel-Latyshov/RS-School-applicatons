@@ -1,1 +1,2 @@
-export const ADD_IN_REDUX = 'ADD_IN_REDUX'
+export const ADD_NEW_CATEGORY = 'ADD_NEW_CATEGORY'
+export const ADD_NEW_WORD = 'ADD_NEW_WORD'

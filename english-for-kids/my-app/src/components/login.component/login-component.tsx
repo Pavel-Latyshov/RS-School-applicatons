@@ -5,11 +5,14 @@ import useLoginPass from '../login-pass';
 import { PushSets } from '../sets-push';
 import starsArr from '../start-state';
 import css from './login-component.module.css'
-const Login = ({ hideNav }: any) => {
+const Login = ({ setUser }: any) => {
     const history = useHistory()
+
 
     const loginValue = useLoginPass('')
     const passValue = useLoginPass('')
+
+
 
     const body = {
         _id: `${loginValue.value}`,
@@ -28,7 +31,10 @@ const Login = ({ hideNav }: any) => {
             }
         })
         const data = await response.json()
-        
+            history.push('/admin')
+            PushSets.pushSets(loginValue.value)
+            PushSets.pushWords(loginValue.value)
+
         history.push('/logup')
         return data
     }
@@ -43,8 +49,9 @@ const Login = ({ hideNav }: any) => {
         }
         if (data !== null && data.password === passValue.value) {
             history.push('/admin')
-            PushSets.pushSets(loginValue.value)
-            PushSets.pushWords(loginValue.value)
+            // PushSets.pushSets(loginValue.value)
+            // PushSets.pushWords(loginValue.value)
+            setUser(loginValue.value)
         } else if (data !== null){
             alert('WRONG PASSWORD')
         }

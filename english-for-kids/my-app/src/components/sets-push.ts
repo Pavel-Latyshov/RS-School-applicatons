@@ -44,7 +44,67 @@ export const PushSets = {
             });
         });
     },
-
-
+    getSets: async (user : any) => {
+        const response = await fetch(`http://localhost:5000/api/users/${user}/sets`, {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        const data = await response.json()
+        return data
+    },
+    updateSets: async (body: any, user: any, setId: any) => {
+        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${setId}`, {
+            method: "PUT",
+            body: JSON.stringify(body),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+            
+        })
+        const data = await response.json()
+        return data
+    },
+    getSetWords: async (user: any, category: any) => {
+        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${category}/game`, {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+            
+        })
+        const data = await response.json()
+        return data
+    },
+    pushSetWords: async (body: any, user: any, category: any) => {
+        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${category}/game`, {
+            method: "POST",
+            body: JSON.stringify(body),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        const data = await response.json()
+        return data
+    }
 }
 
+                    // PushSets.getSetWords(user, category).then(res=>{
+                    //     // console.log(res);
+                    //     res.map((item: any)=> {
+                    //         if(item.set_id===category) {
+                    //             const wordBody = {
+                    //                 image: `${item.image}`,
+                    //                 word: `${item.word}`,
+                    //                 translation: `${item.translation}`,
+                    //                 sound: `${item.sound}`,
+                    //                 set_id: `${setId}`,
+                    //                 user_id: `${user}`
+                    //             }
+                    //             console.log(wordBody);
+                                
+                    //             // PushSets.pushSetWords(wordBody, user, setId)
+                    //         }
+                    //     })
+                    // })

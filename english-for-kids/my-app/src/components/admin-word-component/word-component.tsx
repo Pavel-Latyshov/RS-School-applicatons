@@ -68,7 +68,7 @@ const AdminWordComponent = ({item, user}: any) => {
             user_id: user
         }
 
-        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${adminArr[3]}/game`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${adminArr[3]}/game`, {
                 method: "POST",
                 body: JSON.stringify(body),
                 headers: {

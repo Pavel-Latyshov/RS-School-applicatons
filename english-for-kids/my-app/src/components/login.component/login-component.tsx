@@ -23,7 +23,7 @@ const Login = ({ setUser }: any) => {
     }
     const registerFunc = async (e: any) => {
 
-        const response = await fetch(`http://localhost:5000/api/users/`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/`, {
             method: "POST",
             body: JSON.stringify(body),
             headers: {
@@ -39,7 +39,7 @@ const Login = ({ setUser }: any) => {
         return data
     }
     const loginFunc = async (e: any) => {
-        const response = await fetch(`http://localhost:5000/api/users/${loginValue.value}`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${loginValue.value}`, {
             method: "GET",
         })
         const data = await response.json()

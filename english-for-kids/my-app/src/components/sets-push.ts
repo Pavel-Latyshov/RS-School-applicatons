@@ -5,7 +5,7 @@ import { sets } from './sets';
 export const PushSets = {
     pushSets: (loginValue: any) => {
         sets.forEach(async (element) => {
-            const response = await fetch(`http://localhost:5000/api/users/${loginValue}/sets`, {
+            const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${loginValue}/sets`, {
                 method: "POST",
                 body: JSON.stringify({
                     set: `${element[0]}`,
@@ -24,7 +24,7 @@ export const PushSets = {
         words.forEach(element => {
             element.forEach(async  el => {
                 
-                const response = await fetch(`http://localhost:5000/api/users/${loginValue}/sets/${loginValue}/game`, {
+                const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${loginValue}/sets/${loginValue}/game`, {
                     method: "POST",
                     body: JSON.stringify({
                         image: `${el[0]}`,
@@ -45,7 +45,7 @@ export const PushSets = {
         });
     },
     getSets: async (user : any) => {
-        const response = await fetch(`http://localhost:5000/api/users/${user}/sets`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets`, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ export const PushSets = {
         return data
     },
     updateSets: async (body: any, user: any, setId: any) => {
-        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${setId}`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${setId}`, {
             method: "PUT",
             body: JSON.stringify(body),
             headers: {
@@ -67,7 +67,7 @@ export const PushSets = {
         return data
     },
     getSetWords: async (user: any, category: any) => {
-        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${category}/game`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${category}/game`, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ export const PushSets = {
         return data
     },
     pushSetWords: async (body: any, user: any, category: any) => {
-        const response = await fetch(`http://localhost:5000/api/users/${user}/sets/${category}/game`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${category}/game`, {
             method: "POST",
             body: JSON.stringify(body),
             headers: {

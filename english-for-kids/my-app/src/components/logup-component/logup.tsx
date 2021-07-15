@@ -22,7 +22,7 @@ const Logup= ({ setUser }: any) => {
     }
 
     const loginFunc = async (e: any) => {
-        const response = await fetch(`http://localhost:5000/api/users/${loginValue.value}`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${loginValue.value}`, {
             method: "GET",
         })
         const data = await response.json()

@@ -14,6 +14,9 @@ const AdminHeader = ({ setLogFlag }: any) => {
         history.push('/')
         
     }
+    const wordsAllert = ()=> {
+        alert('Выберите категорию')
+    }
     return (
 
         <div className={css.admin_wrapper}>
@@ -22,8 +25,8 @@ const AdminHeader = ({ setLogFlag }: any) => {
                     categories
                 </div>
             </NavLink>
-            <NavLink to={'/words'}>
-                <div>
+            <NavLink to={'/admin'}>
+                <div onClick={wordsAllert}>
                     words
                 </div>
             </NavLink>

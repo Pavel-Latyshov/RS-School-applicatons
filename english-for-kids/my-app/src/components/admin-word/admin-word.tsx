@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
-import { createPost } from '../../redux/actions';
+import { idText } from 'typescript';
+import { createPost, createWordRedux } from '../../redux/actions';
 import gameArr from '../game-state';
 import useLoginPass from '../login-pass';
 import { PushSets } from '../sets-push';
 import starsArr from '../start-state';
 import css from './admin-word.module.css'
-const AdminWord = ({ img, wordInfo }: any) => {
+const AdminWord = ({ img, wordInfo, user, adminArr }: any) => {
+    // console.log(wordInfo);
+    
     const dispatch = useDispatch()
     const [cardName, setCardName] = useState(null as any)
     const [cardImg, setCardImg] = useState(null as any)
@@ -54,6 +57,44 @@ const AdminWord = ({ img, wordInfo }: any) => {
         audio.play()
     }
 
+    const updateWord = async (e: any) => {
+        PushSets.getSetWords(user, wordInfo[3]).then(res => {
+            console.log(res);
+            res.map((i: any)=> {
+                if(i.word===wordInfo[0]) {
+                    const body = {
+                        _id: i._id,
+                        image: cardImg,
+                        word: cardName,
+                        translation: cardTrans,
+                        sound: cardSound,
+                        set_id: wordInfo[3],
+                        user_id: user
+                    }
+                    PushSets.pushWord(body, user, wordInfo[3], i._id).then(dis=> {
+                        dispatch(createWordRedux(user, cardName))
+                    })
+                    updateFlag()
+                }
+            })
+            
+        })       
+    }
+
+    const deleteWord = ()=> {
+        PushSets.getSetWords(user, wordInfo[3]).then(res=> {
+            res.map((i:any)=> {
+                if(i.word===wordInfo[0]){
+                    const wordId= i._id
+                    PushSets.deleteWord(wordInfo[3], user, wordId).then(res=>{
+                        dispatch(createWordRedux(user, cardName))
+                    })
+                }
+            })
+        })
+    }
+
+
     return (
         <div>
             {
@@ -66,7 +107,7 @@ const AdminWord = ({ img, wordInfo }: any) => {
                         <div className={css.btns} >
                             <div onClick={playSound} >Sound</div>
                             <div onClick={updateFlag}>Update</div>
-                            <div>Delete</div>
+                            <div onClick={deleteWord} >Delete</div>
                         </div>
                     </div>
                     :
@@ -89,7 +130,7 @@ const AdminWord = ({ img, wordInfo }: any) => {
                         </div>
                         <div className={css.btns} >
                             <div onClick={updateFlag}>cancel</div>
-                            <div>update</div>
+                            <div onClick={updateWord} >update</div>
                         </div>
                     </div>
             }

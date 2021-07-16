@@ -87,24 +87,37 @@ export const PushSets = {
         })
         const data = await response.json()
         return data
+    },
+    pushWord: async (body: any, user: any, category: any, wordId:any) => {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${category}/game/${wordId}`, {
+            method: "PUT",
+            body: JSON.stringify(body),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        const data = await response.json()
+        return data
+    },
+    deleteWord: async (setId: any, name: any, wordId: any) => {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${name}/sets/${setId}/game/${wordId}`, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          const data = await response.json()
+          return data
+    },
+    deleteSet: async (setId: any, name: any) => {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${name}/sets/${setId}`, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          const data = await response.json()
+          return data
     }
-}
 
-                    // PushSets.getSetWords(user, category).then(res=>{
-                    //     // console.log(res);
-                    //     res.map((item: any)=> {
-                    //         if(item.set_id===category) {
-                    //             const wordBody = {
-                    //                 image: `${item.image}`,
-                    //                 word: `${item.word}`,
-                    //                 translation: `${item.translation}`,
-                    //                 sound: `${item.sound}`,
-                    //                 set_id: `${setId}`,
-                    //                 user_id: `${user}`
-                    //             }
-                    //             console.log(wordBody);
-                                
-                    //             // PushSets.pushSetWords(wordBody, user, setId)
-                    //         }
-                    //     })
-                    // })
+}

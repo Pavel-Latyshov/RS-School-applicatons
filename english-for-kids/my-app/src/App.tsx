@@ -53,7 +53,7 @@ const App = () => {
 
 useEffect(() => {
     setDataJson(data)
-  }, [categorySelector])
+  }, [categorySelector, wordsSelector])
 
   const clearGameArr = () => {
     return gameArr.splice(0, gameArr.length)

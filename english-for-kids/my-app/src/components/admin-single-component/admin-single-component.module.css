@@ -1,4 +1,6 @@
 .single_admin {
+    height: 800px;
+    overflow: auto;
     font-family: 'Jomhuria', cursive;
     font-size: 30px;
     color: black;
@@ -15,6 +17,7 @@
     background-color: blanchedalmond;
     box-shadow: 5px 5px 5px 5px black;
     transition: all 0.3s ease;
+
 }
 
 .single_admin img {

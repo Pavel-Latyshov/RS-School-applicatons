@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
-import { createPost } from '../../redux/actions';
+import { createPost, createWordRedux } from '../../redux/actions';
 import gameArr from '../game-state';
 import useLoginPass from '../login-pass';
 import { PushSets } from '../sets-push';
@@ -48,7 +48,6 @@ const AdminSingleComponent = ({ category, words, img, user }: any) => {
                     PushSets.updateSets(body, user, setId)
 
                     PushSets.getSetWords(user, category).then(res=>{
-                        // console.log(res);
                         res.map((item: any)=> {
                             if(item.set_id===category) {
                                 const wordBody = {
@@ -64,6 +63,7 @@ const AdminSingleComponent = ({ category, words, img, user }: any) => {
                                 PushSets.pushSetWords(wordBody, user, setId).then(uck=>{
 
                                     dispatch(createPost(user))
+                                    dispatch(createWordRedux(user, cardName))
                                 })
 
                             }
@@ -88,6 +88,19 @@ const AdminSingleComponent = ({ category, words, img, user }: any) => {
             setFlag(true)
         }
     }
+
+    const deleteSet = ()=> {
+        PushSets.getSets(user).then(res=> {
+            res.map((i:any)=> {
+                if (i.set === category){
+                    const setId= i._id
+                    PushSets.deleteSet(setId, user).then(res=>{
+                        dispatch(createPost(user))
+                    })
+                }
+            })
+        })
+    }
     return (
         <div>
             {
@@ -101,6 +114,7 @@ const AdminSingleComponent = ({ category, words, img, user }: any) => {
                             <NavLink to={`/${category}admin`}>
                             <div>Add words</div>
                             </NavLink>
+                            <div onClick={deleteSet}>Delete</div>
                         </div>
                     </div>
                     :

@@ -1,4 +1,6 @@
 .single_admin {
+    height: 800px;
+    overflow: auto;
     padding: 0 2%;
     position: relative;
     display: grid;

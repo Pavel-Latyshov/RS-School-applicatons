@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
-import { createPost, createWord } from '../../redux/actions';
+import { createPost, createWordRedux } from '../../redux/actions';
 import AdminWord from '../admin-word/admin-word';
 import gameArr from '../game-state';
 import useLoginPass from '../login-pass';
@@ -13,7 +13,6 @@ const AdminWordComponent = ({item, user}: any) => {
     const [flag, setFlag] = useState(true)
     const arr= [];
     const w: any = (Object.values(item[1])[0])
-    console.log(item);
     const adminArr:any = Object.entries(w)
     const updateFlag = () => {
         if (flag === true) {
@@ -22,6 +21,7 @@ const AdminWordComponent = ({item, user}: any) => {
             setFlag(true)
         }
     }
+    
     const [cardName, setCardName]=useState(null as any)
     const [cardImg, setCardImg]=useState(null as any)
     const [cardTrans, setCardTrans] = useState(null as any)
@@ -29,13 +29,10 @@ const AdminWordComponent = ({item, user}: any) => {
 
     const wordTranslateHandler = (e: any) => {
         setCardTrans(e.target.value)
-
     }
 
     const wordNameHandler = (e: any) => {
-        setCardName(e.target.value)
-        // console.log(cardName);
-        
+        setCardName(e.target.value)        
     }
     const wordImgHandler = (e: any) => {
         let file = e.target.files[0]
@@ -59,16 +56,20 @@ const AdminWordComponent = ({item, user}: any) => {
 
 
     const createWord = async (e: any) => {
+        console.log(item[0]);
+        const catId= item[0]
+        
         const body = {
             image: cardImg,
             word: cardName,
             translation: cardTrans,
             sound: cardSound,
-            set_id: adminArr[3],
+            set_id: item[0],
             user_id: user
         }
+        
 
-        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${adminArr[3]}/game`, {
+        const response = await fetch(`https://elegant-saucisson-88474.herokuapp.com/api/users/${user}/sets/${catId}/game`, {
                 method: "POST",
                 body: JSON.stringify(body),
                 headers: {
@@ -76,28 +77,26 @@ const AdminWordComponent = ({item, user}: any) => {
                 }
                 
             })
-            updateFlag()
             const data = await response.json()
+            console.log(data);
+            
             setTimeout(()=>{
-                const set: any = adminArr[3]
-                // DISPATCH!!!!!
+                const set: any = item[0]
+                dispatch(createWordRedux(user, set))
             }, 0)
+            updateFlag()
             return data
         
     }
+    
 
 
     
-    // console.log((Object.values(item[1])[0]));
     const renderAdmin = adminArr.map((i: any)=>{
-        console.log(i[0]);
         const img = i[0]
         const wordInfo = i[1]
-
-        return <AdminWord img={img} wordInfo={wordInfo}  />
-        
+        return <AdminWord img={img} wordInfo={wordInfo} user={user} adminArr={adminArr} /> 
     })
-
     return (
         <div className={css.single_admin}> 
             {renderAdmin}

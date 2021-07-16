@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/css/main.0ecd92bb.chunk.css",
+    "main.js": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/main.7e770366.chunk.js",
+    "main.js.map": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/main.7e770366.chunk.js.map",
+    "runtime-main.js": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/runtime-main.269ddf36.js",
+    "runtime-main.js.map": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/runtime-main.269ddf36.js.map",
+    "static/js/2.5017075c.chunk.js": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/2.5017075c.chunk.js",
+    "static/js/2.5017075c.chunk.js.map": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/2.5017075c.chunk.js.map",
+    "static/js/3.1ccf7bc2.chunk.js": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/3.1ccf7bc2.chunk.js",
+    "static/js/3.1ccf7bc2.chunk.js.map": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/3.1ccf7bc2.chunk.js.map",
+    "index.html": "/pavel-latyshov-JSFE2021Q1/english-for-kids/index.html",
+    "static/css/main.0ecd92bb.chunk.css.map": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/css/main.0ecd92bb.chunk.css.map",
+    "static/js/2.5017075c.chunk.js.LICENSE.txt": "/pavel-latyshov-JSFE2021Q1/english-for-kids/static/js/2.5017075c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.269ddf36.js",
+    "static/js/2.5017075c.chunk.js",
+    "static/css/main.0ecd92bb.chunk.css",
+    "static/js/main.7e770366.chunk.js"
+  ]
+}

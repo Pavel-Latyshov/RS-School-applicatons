@@ -1,3 +1,3 @@
-let starsArr: any = []
+const starsArr: any = [];
 
-export default starsArr
+export default starsArr;

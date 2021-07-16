@@ -1,3 +1,3 @@
-let gameArr: any = []
+const gameArr: any = [];
 
-export default gameArr
+export default gameArr;

@@ -1,3 +1,3 @@
-let winArr: any = []
+const winArr: any = [];
 
-export default winArr
+export default winArr;

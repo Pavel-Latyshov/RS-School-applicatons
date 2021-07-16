@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { RootReducer } from './redux/root-reducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
+import { RootReducer } from './redux/root-reducer';
+import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -16,12 +16,7 @@ import thunk from 'redux-thunk';
 //   document.getElementById('root')
 // );
 
-const store = createStore(
-  RootReducer,
-  composeWithDevTools(
-    applyMiddleware(thunk)
-  )
-);
+const store = createStore(RootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <React.StrictMode>

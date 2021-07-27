@@ -1,0 +1,121 @@
+<div class="header_wrapper">
+    <div class="header_logo">
+        <p>match</p>
+        <p>match</p>
+        <p>game...</p>
+    </div>
+    <div class="navbar_wrapper">
+        <div class="about active_link">
+            About
+        </div>
+        <div class="score">
+            Score
+        </div>
+        <div class="settings">
+            Settings
+        </div>
+    </div>
+    <div class="start_game__wrapper">
+        <button class="start_btn 
+        ">START GAME</button>
+    </div>
+    <div class="register_button">
+        <button class="register_btn">REGISTER</button>
+    </div>
+
+
+</div>
+<div class="register_wrapper hidden">
+    <form class="register_form">
+            <div class="">
+                <label for="user_name">
+                    User Name
+                </label>
+                <input maxlength="30" type="text" id="user_name" name="user" required pattern="[a-zA-Zа-яА-Я]+"
+                    placeholder="name" class="input_name">
+            </div>
+            <div class="">
+                <label for="user_name">
+                    User Surname
+                </label>
+                <input maxlength="30" type="text" id="user_name" name="user" required pattern="[a-zA-Zа-яА-Я]+"
+                    placeholder="surname" class="user_surname">
+            </div>
+            <div class="">
+                <label for="user_name">
+                    User Email
+                </label>
+                <input maxlength="30" type="email" id="user_name" name="user" required
+                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="email" class="user_email">
+            </div>
+
+        <div class="register_input">
+            <label for="submit"></label>
+            <input type="submit" value="register" class="register_user">
+        </div>
+    </form>
+    <div>
+        <button class="cancel">cancel</button>
+    </div>
+</div>
+
+<div class="about_wrapper">
+    <div class="about_container">
+        <div class="play">
+            <div class="about_info">
+                <div class="about_info__text">
+                    Press "REGISTER" button and fill personal data
+                </div>
+                <div class="about_info__img"></div>
+            </div>
+            <div class="about_img"></div>
+        </div>
+
+        <div class="play">
+            <div class="about_info">
+                <div class="about_info__text">
+                    You can configure your game settings by pressing "SETTINGS" button
+                </div>
+                <div class="setting_info__img"></div>
+            </div>
+            <div class="settings_img"></div>
+        </div>
+
+        <div class="play">
+            <div class="about_info">
+                <div class="about_info__text">
+                    Start you new game by pressing "START GAME BUTTON"! Remember card positions and match it before times up.
+                </div>
+                <div class="start_info__img"></div>
+            </div>
+            <div class="about_img"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="score_wrapper hidden">
+    <div class="score_container">
+
+    </div>
+</div>
+
+
+<div class="settings_wrapper hidden">
+    <div class="settings_container">
+        <div class="game_difficulty">
+            <div class="difficulty_easy settings_active">Game Difficulty: 4x4</div>
+            <div class="difficulty_medium">Game Difficulty: 6x6</div>
+            <div class="difficulty_hard">Game Difficulty: 8x8</div>
+        </div>
+        <div class="game_design">
+            <div class="game_animals settings_active">Cards design: ANIMALS</div>
+            <div class="game_nature">Cards design: NATURE</div>
+        </div>
+    </div>
+</div>
+
+<div class="start_game_wrapper hidden">
+    <div class="start_game__container">
+    </div>
+</div>

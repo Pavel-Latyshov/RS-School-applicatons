@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1240px;
+    background-color: cadetblue;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.header_wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    background-color:navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+
+.header_logo {
+    height: 80px;
+    margin: 5px;
+    background-color:white;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.header_logo p {
+    margin: 0px;
+    padding: 5px;
+}
+
+.navbar_wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.register_btn {
+    margin-right: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register_btn:hover {
+    transform: scale(1.01);
+}
+
+.register_btn:active {
+    background-color: black;
+    color: white;
+}
+
+.start_btn {
+    margin-right: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    outline: none;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+    animation: start 5s infinite;
+    
+}
+
+@keyframes start{
+    0% {
+       background-color: black;
+       color: white; 
+    }
+
+
+    50% {
+        background-color: white;
+        color: black; 
+    }
+
+    100% {
+        background-color: black;
+        color: white; 
+    }
+}
+
+.register_wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1240px;
+    height: 500px;
+    // background-color: wheat;
+    background-color:navajowhite;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px black;
+    z-index: 10;
+}
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.register_form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+
+.register_form label {
+    width: 200px;
+}
+
+.inputs {
+    display: flex;
+}
+
+.register_form input {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+    color:white;
+    caret-color:white;
+    cursor: pointer;
+}
+
+input:invalid {
+    border: 5px solid red;
+}
+
+input:valid {
+    border: 5px solid green;
+    width: 301px;
+
+}
+
+.register_input input {
+    width: 150px;
+}
+
+
+
+.cancel {
+    position: relative;
+    top: 165px;
+    left: -375px;
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-family: inherit;
+    color:white;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.cancel:active {
+    color: red;
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+//  ABOUT 
+
+
+.active_link {
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.01);
+    border: 10px double white;
+}
+
+.score {
+    padding: 5px;
+    border: 10px double black;
+}
+
+.score:hover {
+    cursor: pointer;
+}
+
+.settings {
+    padding: 5px;
+    border: 10px double black;
+}
+.settings:hover {
+    cursor: pointer;
+}
+
+.about {
+    padding: 5px;
+    border: 10px double black;
+}
+
+.active_link {
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.01);
+    border: 10px double white;
+    background-color: black;
+}
+
+.about:hover {
+    cursor: pointer;
+}
+
+.about_wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 1000px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.play {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.about_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: #ffc877;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+
+.about_img {
+    width: 300px;
+    height: 200px;
+    background-image: url('../img/about/Снимок\ экрана\ 2021-05-17\ в\ 21.50.31.png');
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.about_container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about_info__text {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.about_info__img {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-image: url('../img/about/Снимок\ экрана\ 2021-05-17\ в\ 22.38.30.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.setting_info__img {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    background-image: url('../img/about/Снимок\ экрана\ 2021-05-17\ в\ 22.54.15.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.settings_img {
+    width: 300px;
+    height: 200px;
+    background-image: url('../img/about/Снимок\ экрана\ 2021-05-18\ в\ 19.25.00.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.start_info__img {
+    margin-top: 20px;
+    width: 95px;
+    height: 30px;
+    background-image: url('../img/about/Снимок\ экрана\ 2021-05-17\ в\ 23.03.42.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+// SCORE 
+.score_wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 1000px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+// SETTINGS
+.settings_wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 1000px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.settings_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.game_difficulty {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 450px;
+    height: 250px;
+    background-color: #ffc877;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.game_difficulty div:hover {
+    transform: scale(1.05);
+}
+
+
+.difficulty_easy {
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black;
+    transition: 0.3s ease;
+}
+
+.difficulty_medium {
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black;
+    transition: 0.3s ease;
+}
+
+.difficulty_hard {
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black;
+    transition: 0.3s ease;
+
+}
+
+.game_animals {
+    width: 385px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black; 
+    transition: 0.3s ease;
+
+}
+
+.game_nature {
+    width: 385px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border: 10px double black; 
+    transition: 0.3s ease;
+}
+
+.settings_active  {
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.01);
+    border: 10px double white;
+    background-color: black;
+    border: 10px double white;
+    transition: 0.3s ease;
+
+}
+
+
+
+.game_design {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 450px;
+    height: 250px;
+    background-color: #ffc877;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.game_design div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+// START GAME
+
+.start_game_wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 1000px;
+    background-color: navajowhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.start_game__container {
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+}
+
+.start_easy {
+    grid-template-columns: repeat(4, auto);
+}
+.start_medium {
+    grid-template-columns: repeat(6, auto);
+}
+.start_hard {
+    grid-template-columns: repeat(8, auto);
+}
+
+.game_card {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    // background-image: url('../img/animal/001.svg');
+    background-size: cover;
+    border-radius: 5px;
+    border: 2px solid black;
+    // box-shadow: 3px 3px 3px 3px black;
+    transition: 0.3s ease;
+
+}
+
+.game_card_reverse {
+    transform: rotateY(180deg);
+    background-color:cadetblue;
+}
+
+.game_card:hover {
+    cursor: pointer;
+    // transform: scale(1.01);
+}
+
+
+
+
+
+

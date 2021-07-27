@@ -1,0 +1,100 @@
+{
+    "sets": {
+        "Action A": {
+            "./images/open.jpg": {
+                "./images/fly.jpg": ["fly", "летать", "./souns/fly.mp3", "Action A"],
+                "./images/dance.jpg": ["dance", "танцевать", "./souns/dance.mp3", "Action A"],
+                "./images/fish.jpg": ["fish", "рыбачить", "./souns/fish.mp3", "Action A"],
+                "./images/spin.jpg": ["spin", "крутиться", "./souns/spin.mp3", "Action A"],
+                "./images/scream.jpg": ["scream", "кричать", "./souns/scream.mp3", "Action A"],
+                "./images/hug.jpg": ["hug", "обнимать", "./souns/hug.mp3", "Action A"],
+                "./images/cry.jpg": ["cry", "плакать", "./souns/cry.mp3", "Action A"],
+                "./images/roll.jpg": ["roll", "катиться", "./souns/roll.mp3", "Action A"]       
+            }
+        },
+        "Action B": { 
+            "./images/swim.jpg": {
+                "./images/ride.jpg": ["ride", "ездить", "./souns/ride.mp3", "Action B"],
+                "./images/sing.jpg": ["sing", "петь", "./souns/sing.mp3", "Action B"],
+                "./images/skip.jpg": ["skip", "скакать", "./souns/skip.mp3", "Action B"],
+                "./images/point.jpg": ["point", "указывать", "./souns/point.mp3", "Action B"],
+                "./images/run.jpg": ["run", "бежать", "./souns/run.mp3", "Action B"],
+                "./images/play.jpg": ["play", "играть", "./souns/play.mp3", "Action B"],
+                "./images/swim.jpg": ["swim", "плавать", "./souns/swim.mp3", "Action B"],
+                "./images/open.jpg": ["open", "открывать", "./souns/open.mp3", "Action B"]  
+            }
+        },
+        "Action C": {
+            "./images/hug.jpg": {
+                "./images/whistle.jpg": ["whistle", "свистеть", "./souns/whistle.mp3", "Action C"],
+                "./images/carry.jpg": ["carry", "нести", "./souns/carry.mp3", "Action C"],
+                "./images/dive.jpg": ["dive", "нырять", "./souns/dive.mp3", "Action C"],
+                "./images/jump.jpg": ["jump", "приыгать", "./souns/jump.mp3", "Action C"],
+                "./images/draw.jpg": ["draw", "рисовать", "./souns/draw.mp3", "Action C"],
+                "./images/argue.jpg": ["argue", "спорить", "./souns/argue.mp3", "Action C"],
+                "./images/build.jpg": ["build", "строить", "./souns/build.mp3", "Action C"],
+                "./images/push.jpg": ["push", "толкать", "./souns/push.mp3", "Action C"]  
+            }
+        },
+        "Adjective": {
+            "./images/happy.jpg": {
+                "./images/big.jpg": ["big", "большой", "./souns/big.mp3", "Adjective"],
+                "./images/small.jpg": ["small", "маленький", "./souns/small.mp3", "Adjective"],
+                "./images/slow.jpg": ["slow", "медленный", "./souns/slow.mp3", "Adjective"],
+                "./images/fast.jpg": ["fast", "быстрый", "./souns/fast.mp3", "Adjective"],
+                "./images/old.jpg": ["old", "старый", "./souns/old.mp3", "Adjective"],
+                "./images/young.jpg": ["young", "молодой", "./souns/young.mp3", "Adjective"],
+                "./images/tall.jpg": ["tall", "длинный", "./souns/tall.mp3", "Adjective"],
+                "./images/beautiful.jpg": ["beautiful", "красивый", "./souns/beautiful.mp3", "Adjective"]  
+            }
+        },
+        "Animal A": {
+            "./images/lion.jpg": {
+                "./images/bird.jpg": ["bird", "птичка", "./souns/bird.mp3", "Animal A"],
+                "./images/cat.jpg": ["cat", "кот", "./souns/cat.mp3", "Animal A"],
+                "./images/chick.jpg": ["chick", "ципленок", "./souns/chick.mp3", "Animal A"],
+                "./images/chicken.jpg": ["chicken", "курица", "./souns/chicken.mp3", "Animal A"],
+                "./images/dog.jpg": ["dog", "собака", "./souns/dog.mp3", "Animal A"],
+                "./images/dolphin.jpg": ["dolphin", "дельфин", "./souns/dolphin.mp3", "Animal A"],
+                "./images/fish1.jpg": ["fish", "рыба", "./souns/fish.mp3", "Animal A"],
+                "./images/frog.jpg": ["frog", "лягушка", "./souns/frog.mp3", "Animal A"]  
+            }
+        },
+        "Animal B": {
+            "./images/dog.jpg": {
+                "./images/horse.jpg": ["horse", "лошадь", "./souns/horse.mp3", "Animal B"],
+                "./images/giraffe.jpg": ["giraffe", "жираф", "./souns/giraffe.mp3", "Animal B"],
+                "./images/lion.jpg": ["lion", "лев", "./souns/lion.mp3", "Animal B"],
+                "./images/mouse.jpg": ["mouse", "мышь", "./souns/mouse.mp3", "Animal B"],
+                "./images/pig.jpg": ["pig", "свинья", "./souns/pig.mp3", "Animal B"],
+                "./images/rabbit.jpg": ["rabbit", "кролик", "./souns/rabbit.mp3", "Animal B"],
+                "./images/sheep.jpg": ["sheep", "овечка", "./souns/sheep.mp3", "Animal B"],
+                "./images/turtle.jpg": ["turtle", "черепаха", "./souns/turtle.mp3", "Animal B"]  
+            }
+        },
+        "Clothes": {
+            "./images/shirt.jpg": {
+                "./images/coat.jpg": ["coat", "пальто", "./souns/coat.mp3", "Clothes"],
+                "./images/pants.jpg": ["pants", "брюки", "./souns/pants.mp3", "Clothes"],
+                "./images/skirt.jpg": ["skirt", "юбка", "./souns/skirt.mp3", "Clothes"],
+                "./images/dress.jpg": ["dress", "платье", "./souns/dress.mp3", "Clothes"],
+                "./images/shoe.jpg": ["shoe", "туфли", "./souns/shoe.mp3", "Clothes"],
+                "./images/shirt.jpg": ["shirt", "рубашка", "./souns/shirt.mp3", "Clothes"],
+                "./images/boot.jpg": ["boot", "ботинок", "./souns/boot.mp3", "Clothes"],
+                "./images/blouse.jpg": ["blouse", "блузка", "./souns/blouse.mp3", "Clothes"]  
+            }
+        },
+        "Emotion": {
+            "./images/angry.jpg": {
+                "./images/smile.jpg": ["smile", "улыбаться", "./souns/smile.mp3", "Emotion"],
+                "./images/angry.jpg": ["angry", "злиться", "./souns/angry.mp3", "Emotion"],
+                "./images/sad.jpg": ["sad", "грусть", "./souns/sad.mp3", "Emotion"],
+                "./images/scared.jpg": ["scared", "испуганный", "./souns/scared.mp3", "Emotion"],
+                "./images/laugh.jpg": ["laugh", "смех", "./souns/laugh.mp3", "Emotion"],
+                "./images/tired.jpg": ["tired", "уставший", "./souns/tired.mp3", "Emotion"],
+                "./images/happy.jpg": ["happy", "счастливый", "./souns/happy.mp3", "Emotion"],
+                "./images/surprised.jpg": ["surprised", "удивленный", "./souns/surprised.mp3", "Emotion"]  
+            }
+        }
+    }
+}

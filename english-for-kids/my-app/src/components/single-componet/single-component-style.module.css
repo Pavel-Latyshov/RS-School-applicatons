@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.action__card {
+    font-family: 'Jomhuria', cursive;
+    font-size: 40px;
+    color: black;
+    margin: 20px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    max-width: 300px;
+    max-height: 250px;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    box-shadow: 5px 5px 5px 5px black;
+    transition: all 0.3s ease;
+}
+
+
+.action__card img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.action__card:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}

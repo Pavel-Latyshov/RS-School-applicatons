@@ -1,0 +1,24 @@
+.admin_wrapper {
+    padding: 10px;
+    display: flex;
+    max-width: 30%;
+    min-width: 250px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin_wrapper div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    min-height: 30px;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+
+}
+
+

@@ -1,0 +1,63 @@
+.header_btns{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.burger_btn {
+    display: flex;
+    justify-content: center;;
+    margin: 10px;
+    /* border: 2px solid black; */
+    /* border-radius: 8px; */
+    width: 50px;
+    /* background-color: black; */
+    transition: 0.3s;
+}
+
+.burger_btn:active {
+    transform: rotate(20deg);
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+
+.burger_btn img{
+    /* border-radius: 8px; */
+    background-color:blanchedalmond;
+    /* padding: 5px; */
+    width: 50px;
+    transition: all 0.3s ease;
+}
+
+.burger_btn img:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.burger {
+    position: absolute;
+    /* top: 150px; */
+    transform: translateX(-100%);
+    transition:  0.8s;
+    z-index: 10000;
+
+}
+
+
+.burger_left {
+    position: absolute;
+    /* top: 150px; */
+    transform: translateX(0%);
+    transition: 0.8s ;
+    z-index: 1000000;
+
+}
+
+.train_btn {
+    width: 100px;
+    height: 50px;
+    /* background-color: royalblue; */
+}
